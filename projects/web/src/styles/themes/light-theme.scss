@@ -1,0 +1,13 @@
+@import "./imports";
+@import "./colors";
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Domine', serif;
+}
+
+body, html {
+    background-color: $site-background;
+}

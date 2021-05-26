@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'lsweb-main-layout',
+    selector: 'vsf-web-main-layout',
     templateUrl: './main-layout.component.html',
     styleUrls: ['./main-layout.component.scss']
 })

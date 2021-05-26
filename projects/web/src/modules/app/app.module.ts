@@ -1,18 +1,17 @@
+import { VsfCommonModule } from './../vsf-common/vsf-common.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './app.routes';
 import { AppComponent } from './components/app-component/app.component';
-import { MainLayoutComponent } from './components/main-layout/main-layout.component';
 
 @NgModule({
     declarations: [
-        AppComponent,
-        MainLayoutComponent
+        AppComponent
     ],
     imports: [
         BrowserModule,
-        AppRoutingModule
+        AppRoutingModule,
+        VsfCommonModule
     ],
     providers: [],
     bootstrap: [AppComponent]

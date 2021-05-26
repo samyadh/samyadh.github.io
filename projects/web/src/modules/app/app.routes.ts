@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MainLayoutComponent } from './components/main-layout/main-layout.component';
 
 const routes: Routes = [
     {
-        path: "",
-        component: MainLayoutComponent
+        path: "search",
+        loadChildren: () => import("../search-slot/search-slot.module").then(m => m.SearchSlotModule)
+    },
+    {
+        path: "**",
+        redirectTo: "search"
     }
 ];
 
