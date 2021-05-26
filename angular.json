@@ -15,12 +15,12 @@
       },
       "root": "projects/web",
       "sourceRoot": "projects/web/src",
-      "prefix": "app",
+      "prefix": "lsweb",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "web-dist/",
+            "outputPath": "docs/",
             "index": "projects/web/src/index.html",
             "main": "projects/web/src/main.ts",
             "polyfills": "projects/web/src/polyfills.ts",
