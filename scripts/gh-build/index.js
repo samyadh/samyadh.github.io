@@ -5,12 +5,14 @@ exec("ng build", function(err, stdout, stderr) {
     if (err) {
         console.log(err);
     }
-    fs.copyFile("scripts/gh-build/404.html","docs/404.html",(err) => {
+    console.log(stdout);
+
+    fs.copyFile("apps/web/src/index.html","docs/404.html",(err) => {
     if (err) {
         console.log("Error Found:", err);
     }
     else {
-        console.log("\nBuild complete. \n");
+        console.log("Build complete. \n");
     }
     });
 });
