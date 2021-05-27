@@ -1,8 +1,11 @@
+@import "./../../../../styles/themes/colors";
+
 main {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
+    flex-direction: column;
 
     .intro {
         text-align: right;
@@ -61,8 +64,20 @@ main {
                 cursor: pointer;
                 background-color: limegreen;
                 border-radius: 50%;
+                height: 7rem;
             }
           }
         }
-    }   
+    }
+    .page-links {
+        margin: 30px;
+        width: 80vw;
+        text-align: right;
+
+        a {
+            font-size: 2rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
 }
