@@ -7,7 +7,7 @@ exec("ng build", function(err, stdout, stderr) {
     }
     console.log(stdout);
 
-    fs.copyFile("apps/web/src/index.html","docs/404.html",(err) => {
+    fs.copyFile("scripts/gh-build/404.html","docs/404.html",(err) => {
     if (err) {
         console.log("Error Found:", err);
     }
