@@ -1,0 +1,68 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    .intro {
+        text-align: right;
+        font-size: 1.6rem;
+
+        h1 {
+            font-size: 14rem;
+        }
+
+        h3 {
+            margin-top: 1rem;
+            font-size: 3rem;
+        }
+
+        h4 {
+            font-size: 2.2rem;
+        }
+
+       @media only screen and (max-width: 768px) {
+            text-align: center;
+
+            h1 {
+                font-size: 5rem;
+            }
+
+            h3 {
+                margin-top: 1rem;
+                font-size: 1.2rem;
+            }
+
+            h4 {
+                font-size: 1.2rem;
+            }
+       }
+
+        div.line {
+            display: inline-block;
+            min-height: 0.5rem;
+            margin: 6rem 0rem;
+            width: 80vw;
+            background-color: limegreen;
+        }
+
+        ul {
+          li {
+                display: inline-block;
+                margin-top: 20px;
+
+            img {
+                margin: 20px;
+                height: 30px;
+                width: 30px;
+            }
+
+            &:hover {
+                cursor: pointer;
+                background-color: limegreen;
+                border-radius: 50%;
+            }
+          }
+        }
+    }   
+}
