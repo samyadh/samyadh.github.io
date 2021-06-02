@@ -1,0 +1,415 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap"
+        rel="stylesheet" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Fira Sans', sans-serif;
+            color: #3A3A3A;
+            font-size: 14px;
+        }
+
+        @media print {
+            * {
+                font-size: 8px;
+            }
+
+            .a4-page header .right {
+                width: 70%;
+            }
+
+            /* h1 {
+                font-size: 6rem !important;
+            }
+
+            h2 {
+                font-size: 2.2rem !important;
+            }
+
+            a,
+            span,
+            p {
+                font-size: 2rem !important;
+            }
+
+            .pills span {
+                font-size: 1.6rem !important;
+            }
+
+            section .intro-text {
+                font-size: 2.2rem;
+            }
+
+            section .intro-text strong {
+                font-size: 2.2rem;
+            } */
+        }
+
+        h1 {
+            font-size: 5rem;
+        }
+
+        h2,
+        h3 {
+            font-weight: 500;
+            font-size: 1.6rem;
+        }
+
+        h5 {
+            font-weight: 500;
+            font-size: 1.6rem;
+        }
+
+        h6 {
+            font-weight: 500;
+            font-size: 1.6rem;
+        }
+
+        .a4-page {
+            height: calc(1.415 * 100VW);
+            border: 1px solid #cecece;
+            margin: auto;
+            box-sizing: border-box;
+            padding: 40px;
+        }
+
+        .a4-page .box {
+            /* border: 2px solid #3A3A3A; */
+            box-sizing: border-box;
+            padding: 20px;
+            height: 100%;
+            border-radius: 4px;
+        }
+
+        .a4-page header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .a4-page header h1 {
+            margin-bottom: 8px;
+        }
+
+        .a4-page header a {
+            display: block;
+            margin-bottom: 4px;
+            font-size: 1.6rem;
+        }
+
+        .a4-page header .right {
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+            align-items: flex-end;
+            width: 55%;
+        }
+
+        .a4-page header .pills {
+            margin-bottom: 1.2rem;
+        }
+
+        .a4-page header .right .pills span {
+            font-size: 1.2rem;
+            border-radius: 0.4rem;
+            padding: 0.4rem 0.8rem;
+            display: inline-block;
+            margin-top: 0.4rem;
+            border: 0.1rem solid #d0d0d0;
+        }
+
+        .a4-page section {
+            box-sizing: border-box;
+        }
+
+        .hoz-line {
+            margin: 20px 0px;
+            box-sizing: border-box;
+            border: 1px solid #3A3A3A;
+        }
+
+        .hoz-line.short {
+            margin: 8px 0px;
+            box-sizing: border-box;
+            border: 1px dashed #3A3A3A;
+        }
+
+        .heading {
+            margin-bottom: 0.4rem;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+
+        section .intro-text {
+            font-size: 1.6rem;
+            margin-bottom: 1.2rem;
+        }
+
+        section .intro-text strong {
+            font-weight: 500;
+            font-size: 1.6rem;
+        }
+
+        .company {
+            margin-top: 0.8rem;
+            margin-left: 1.6rem;
+        }
+
+        .points ul {
+            padding-left: 30px;
+        }
+
+        .points ul li {
+            font-size: 1.4rem;
+            margin-bottom: 0.4rem;
+            position: relative;
+        }
+
+        .points ul li div {
+            font-size: 1.4rem;
+        }
+
+        .role h6 {
+            margin: 4px 0;
+            font-weight: 400;
+            font-size: 1.4rem;
+        }
+
+        .role ul {
+            padding-left: 28px;
+        }
+
+        .role ul li {
+            font-size: 1.4rem;
+            margin-bottom: 0.4rem;
+        }
+
+        article {
+            margin-top: 1.6rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="printAble" class="a4-page intro">
+        <div class="box">
+            <header>
+                <div>
+                    <h1>
+                        Samyadh Jain
+                    </h1>
+                    <a href="mailto:samyadh.jain@gmail.com">samyadh.jain@gmail.com</a>
+                    <a href="tel:+919739221385">+91 9739221385</a>
+                    <a href="https://github.com/samyadh">https://github.com/samyadh</a>
+                </div>
+                <div class="right">
+                    <h3 class="heading">
+                        Technical Skills
+                    </h3>
+                    <div class="pills">
+                        <span>JavaScript</span>
+                        <span>Angular</span>
+                        <span>React</span>
+                        <span>Node</span>
+                        <span>jQuery</span>
+                        <span>Flutter</span>
+                        <span>Android</span>
+                        <span>Python</span>
+                        <span>PHP</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+                    <h3 class="heading">
+                        Other Skills
+                    </h3>
+                    <div class="pills">
+                        <span>UX Design</span>
+                        <span>DevOps</span>
+                        <span>Product Management</span>
+                        <span>Project Management</span>
+                        <span>Agile</span>
+                        <span>Client Management</span>
+                        <span>Event Management</span>
+                    </div>
+                </div>
+            </header>
+            <section>
+                <div class="hoz-line"></div>
+                <div class="intro-text">
+                    A software developer with <strong>7+ years</strong> of experience and expertise
+                    in frontend development, product management.
+                </div>
+                <article>
+                    <h3 class="heading"> Experience </h3>
+                    <div class="company">
+                        <h5>Reckonsys Tech Labs Pvt Ltd</h5>
+                        <div class="role">
+                            <h6>Lead UI Developer, Mar 2017 - Present</h6>
+                            <div>
+                                <ul>
+                                    <li>
+                                        Oversee team responsible for design, development & deployment of SaaS platforms.
+                                    </li>
+                                    <li>
+                                        Design UI architecture to develop optimized frontend efficiently and
+                                        effectively.
+                                    </li>
+                                    <li>
+                                        Collaborate with client and design UX, write pixel perfect UI code.
+                                    </li>
+                                    <li>
+                                        Motivate, encourage the team to deliver lean and robust applications.
+                                    </li>
+                                    <li>
+                                        Deliver applications to clients under a given time frame and help them to
+                                        gain more familiarity with the system.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company">
+                        <h5>HyHop Mobility Technologies Pvt Ltd</h5>
+                        <div class="role">
+                            <h6>Senior Software Engineer, Aug 2016 - Feb 2017</h6>
+                            <div>
+                                <ul>
+                                    <li>
+                                        Manage design, development & deployment of HyHop Cabs
+                                        App, Websites.
+                                    </li>
+                                    <li>
+                                        Lead a multi-discipline & multi-cultural team of 10 members.
+                                    </li>
+                                    <li>
+                                        Design system architecture, develop backend APIs and web systems to support
+                                        transactions from various clients.
+                                    </li>
+                                    <li>
+                                        Write code for multiple Android apps, websites used by customers, operations.
+                                    </li>
+                                    <li>
+                                        Integrate secure payment gateway and other 3rd party APIs.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company">
+                        <h5>Ness Technologies Pvt Ltd</h5>
+                        <div class="role">
+                            <h6>Software Engineer, Jan 2015 – Jul 2016</h6>
+                            <div>
+                                <ul>
+                                    <li>
+                                        Create & implement methods to increase the efficiency and productivity of the
+                                        consumer marketing email delivery team.
+                                    </li>
+                                    <li>
+                                        Collaborate with offshore designers and develop the best UI architecture for
+                                        various well-known content delivery websites.
+                                    </li>
+                                    <li>
+                                        Design and develop one-off transactional pages across e-commerce portals and
+                                        perform A/B testing results.
+                                    </li>
+                                    <li>
+                                        Follow the newest trends and technologies across the world and provide
+                                        applications, impact analysis of them on the existing system.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company">
+                        <h5>Rossitek Software Solutions Pvt Ltd</h5>
+                        <div class="role">
+                            <h6>Web Developer, Jan 2014 - Dec 2014</h6>
+                            <div>
+                                <ul>
+                                    <li>
+                                        Interact with clients across the world to understand requirements and develop
+                                        web and app systems.
+                                    </li>
+                                    <li>
+                                        Create responsive websites for various clients.
+                                    </li>
+                                    <li>
+                                        Discuss and develop REST APIs for Android, IOS apps to consume.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company">
+                        <h5>Freelance</h5>
+                        <div class="role">
+                            <h6>Full Stack Developer, Oct 2012 - Aug 2015</h6>
+                            <div>
+                                <ul>
+                                    <li>
+                                        Brand development, design & code websites for numerous clients all over the
+                                        world.
+                                    </li>
+                                    <li>
+                                        Create responsive websites for various clients.
+                                    </li>
+                                    <li>
+                                        Discuss and develop REST APIs for Android, IOS apps to consume.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="points">
+                    <h3 class="heading"> Achievements </h3>
+                    <ul>
+                        <li>
+                            Travelled to all 4 corners of the country on motorcycle.
+                        </li>
+                        <li>
+                            Teach under-privileged kids through government programs.
+                        </li>
+                        <li>
+                            Financially Aid education to kids every year.
+                        </li>
+                        <li>
+                            Represent District, School, College in various sports, competition and won prices.
+                        </li>
+                        <li>
+                            Appriciation certificates while working as software developer.
+                        </li>
+                    </ul>
+                </article>
+                <article class="points">
+                    <h3 class="heading"> Education </h3>
+                    <ul>
+                        <li>
+                            <h6>
+                                Master's in Computer Application, Aggregate: 76%
+                            </h6>
+                            <div>Sep 2011 – Apr 2014, Visvesvaraya Technological University, Malnad College of
+                                Engineering, Hassan</div>
+                        </li>
+                        <li>
+                            <h6>
+                                Bachelor's in Computer Application, Aggregate: 64%
+                            </h6>
+                            <div>
+                                Aug 2008 – May 2011, Karnatak University, Global College of BBA & BCA, Hubli
+                            </div>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
