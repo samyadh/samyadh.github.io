@@ -1,17 +1,17 @@
 ul {
   li {
-    display: inline-block;
     a {
+      display: inline-block;
       img {
         margin: 20px;
         height: 30px;
         width: 30px;
       }
-    }
-    &:hover {
-      cursor: pointer;
-      border-radius: 50%;
-      height: 70px;
+      &:hover {
+        cursor: pointer;
+        border-radius: 50%;
+        height: 70px;
+      }
     }
   }
 }
