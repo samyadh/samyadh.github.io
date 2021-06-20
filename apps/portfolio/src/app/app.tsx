@@ -1,13 +1,11 @@
-import styles from './app.module.scss';
-
-import { ReactComponent as Logo } from './logo.svg';
-import star from './star.svg';
+import './../assets/styles/tailwind.css';
+import './../assets/styles/app.scss';
 
 export function App() {
   return (
-    <div>
-      <h1>Hello World!</h1>
-    </div>
+    <button className="py-2 px-4 font-semibold rounded-lg shadow-md text-white bg-green-500 hover:bg-green-700">
+      Click me
+    </button>
   );
 }
 
