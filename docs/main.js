@@ -1,26 +1,5 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"],{
 
-/***/ "../../../node_modules/css-loader/dist/cjs.js?!../../../node_modules/sass-loader/dist/cjs.js!./pages/app/app.module.scss":
-/*!********************************************************************************************************************************************************************************************************************!*\
-  !*** C:/Users/samya/Codes/web/samyadh.github.io/node_modules/css-loader/dist/cjs.js??ref--5-oneOf-1-1!C:/Users/samya/Codes/web/samyadh.github.io/node_modules/sass-loader/dist/cjs.js!./pages/app/app.module.scss ***!
-  \********************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ "../../../node_modules/css-loader/dist/runtime/api.js");
-exports = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-exports.push([module.i, ".app_app__1Ckdc {\n  display: block;\n}", ""]);
-// Exports
-exports.locals = {
-	"app": "app_app__1Ckdc"
-};
-module.exports = exports;
-
-
-/***/ }),
-
 /***/ "../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js":
 /*!*********************************************************************************************************************!*\
   !*** C:/Users/samya/Codes/web/samyadh.github.io/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
@@ -314,6 +293,98 @@ module.exports = function (list, options) {
 
 /***/ }),
 
+/***/ "./components/pages/app/app.tsx":
+/*!**************************************!*\
+  !*** ./components/pages/app/app.tsx ***!
+  \**************************************/
+/*! exports provided: App, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "App", function() { return App; });
+/* harmony import */ var tailwindcss_tailwind_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tailwindcss/tailwind.css */ "../../../node_modules/tailwindcss/tailwind.css");
+/* harmony import */ var tailwindcss_tailwind_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tailwindcss_tailwind_css__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "../../../node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "../../../node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-dev-runtime */ "../../../node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__);
+var _jsxFileName = "C:\\Users\\samya\\Codes\\web\\samyadh.github.io\\apps\\web\\src\\components\\pages\\app\\app.tsx";
+
+
+
+
+
+const Me = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.lazy(() => Promise.all(/*! import() | me-me */[__webpack_require__.e("common"), __webpack_require__.e("me-me")]).then(__webpack_require__.bind(null, /*! ./../me/me */ "./components/pages/me/me.tsx")));
+const Projects = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.lazy(() => Promise.all(/*! import() | projects-projects */[__webpack_require__.e("common"), __webpack_require__.e("projects-projects")]).then(__webpack_require__.bind(null, /*! ./../projects/projects */ "./components/pages/projects/projects.tsx")));
+function App() {
+  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["BrowserRouter"], {
+    children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Switch"], {
+      children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+        path: "/",
+        children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(react__WEBPACK_IMPORTED_MODULE_1__["Suspense"], {
+          fallback: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("div", {
+            children: "Loading..."
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 14,
+            columnNumber: 31
+          }, this),
+          children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(Me, {}, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 15,
+            columnNumber: 13
+          }, this)
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 14,
+          columnNumber: 11
+        }, this)
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 13,
+        columnNumber: 9
+      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+        path: "/projects",
+        children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(react__WEBPACK_IMPORTED_MODULE_1__["Suspense"], {
+          fallback: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("div", {
+            children: "Loading..."
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 19,
+            columnNumber: 31
+          }, this),
+          children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(Projects, {}, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 20,
+            columnNumber: 13
+          }, this)
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 19,
+          columnNumber: 11
+        }, this)
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 18,
+        columnNumber: 9
+      }, this)]
+    }, void 0, true, {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 7
+    }, this)
+  }, void 0, false, {
+    fileName: _jsxFileName,
+    lineNumber: 11,
+    columnNumber: 5
+  }, this);
+}
+/* harmony default export */ __webpack_exports__["default"] = (App);
+
+/***/ }),
+
 /***/ "./main.tsx":
 /*!******************!*\
   !*** ./main.tsx ***!
@@ -327,7 +398,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "../../../node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _pages_app_app__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/app/app */ "./pages/app/app.tsx");
+/* harmony import */ var _components_pages_app_app__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/pages/app/app */ "./components/pages/app/app.tsx");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-dev-runtime */ "../../../node_modules/react/jsx-dev-runtime.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "C:\\Users\\samya\\Codes\\web\\samyadh.github.io\\apps\\web\\src\\main.tsx";
@@ -336,7 +407,7 @@ var _jsxFileName = "C:\\Users\\samya\\Codes\\web\\samyadh.github.io\\apps\\web\\
 
 
 react_dom__WEBPACK_IMPORTED_MODULE_1__["render"]( /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(react__WEBPACK_IMPORTED_MODULE_0__["StrictMode"], {
-  children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(_pages_app_app__WEBPACK_IMPORTED_MODULE_2__["default"], {}, void 0, false, {
+  children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(_components_pages_app_app__WEBPACK_IMPORTED_MODULE_2__["default"], {}, void 0, false, {
     fileName: _jsxFileName,
     lineNumber: 7,
     columnNumber: 5
@@ -346,81 +417,6 @@ react_dom__WEBPACK_IMPORTED_MODULE_1__["render"]( /*#__PURE__*/Object(react_jsx_
   lineNumber: 6,
   columnNumber: 3
 }, undefined), document.getElementById('root'));
-
-/***/ }),
-
-/***/ "./pages/app/app.module.scss":
-/*!***********************************!*\
-  !*** ./pages/app/app.module.scss ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var content = __webpack_require__(/*! !../../../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-1-1!../../../../../node_modules/sass-loader/dist/cjs.js!./app.module.scss */ "../../../node_modules/css-loader/dist/cjs.js?!../../../node_modules/sass-loader/dist/cjs.js!./pages/app/app.module.scss");
-
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
-
-var options = {}
-
-options.insert = "head";
-options.singleton = false;
-
-var update = __webpack_require__(/*! ../../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
-
-if (content.locals) {
-  module.exports = content.locals;
-}
-
-
-/***/ }),
-
-/***/ "./pages/app/app.tsx":
-/*!***************************!*\
-  !*** ./pages/app/app.tsx ***!
-  \***************************/
-/*! exports provided: App, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "App", function() { return App; });
-/* harmony import */ var _app_module_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app.module.scss */ "./pages/app/app.module.scss");
-/* harmony import */ var _app_module_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_app_module_scss__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var tailwindcss_tailwind_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! tailwindcss/tailwind.css */ "../../../node_modules/tailwindcss/tailwind.css");
-/* harmony import */ var tailwindcss_tailwind_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(tailwindcss_tailwind_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-dev-runtime */ "../../../node_modules/react/jsx-dev-runtime.js");
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "C:\\Users\\samya\\Codes\\web\\samyadh.github.io\\apps\\web\\src\\pages\\app\\app.tsx";
-
-
-
-function App() {
-  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("div", {
-    className: _app_module_scss__WEBPACK_IMPORTED_MODULE_0___default.a.app,
-    children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("button", {
-      className: "py-2 px-4 font-semibold rounded-lg shadow-md text-white bg-green-500 hover:bg-green-700",
-      children: "Click me"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 7,
-      columnNumber: 7
-    }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("button", {
-      className: "btn btn-green",
-      children: "Button"
-    }, void 0, false, {
-      fileName: _jsxFileName,
-      lineNumber: 10,
-      columnNumber: 7
-    }, this)]
-  }, void 0, true, {
-    fileName: _jsxFileName,
-    lineNumber: 6,
-    columnNumber: 5
-  }, this);
-}
-/* harmony default export */ __webpack_exports__["default"] = (App);
 
 /***/ }),
 
