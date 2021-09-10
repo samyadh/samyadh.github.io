@@ -1,5 +1,3 @@
-import './projects.module.scss';
-
 /* eslint-disable-next-line */
 export interface ProjectsProps {}
 
