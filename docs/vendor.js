@@ -98,17 +98,6 @@ function _setPrototypeOf(o, p) {
 
 /***/ }),
 
-/***/ "../../../node_modules/@nrwl/web/src/utils/third-party/cli-files/plugins/raw-css-loader.js!../../../node_modules/postcss-loader/dist/cjs.js?!../../../node_modules/tailwindcss/tailwind.css":
-/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** C:/Users/samya/Codes/web/samyadh.github.io/node_modules/@nrwl/web/src/utils/third-party/cli-files/plugins/raw-css-loader.js!C:/Users/samya/Codes/web/samyadh.github.io/node_modules/postcss-loader/dist/cjs.js??ref--5-oneOf-4-2!C:/Users/samya/Codes/web/samyadh.github.io/node_modules/tailwindcss/tailwind.css ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = [[module.i, "@tailwind base;\n\n@tailwind components;\n\n@tailwind utilities;\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRhaWx3aW5kLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxjQUFjOztBQUVkLG9CQUFvQjs7QUFFcEIsbUJBQW1CIiwiZmlsZSI6InRhaWx3aW5kLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIkB0YWlsd2luZCBiYXNlO1xuXG5AdGFpbHdpbmQgY29tcG9uZW50cztcblxuQHRhaWx3aW5kIHV0aWxpdGllcztcbiJdfQ== */", '', '']]
-
-/***/ }),
-
 /***/ "../../../node_modules/history/esm/history.js":
 /*!**************************************************************************************!*\
   !*** C:/Users/samya/Codes/web/samyadh.github.io/node_modules/history/esm/history.js ***!
@@ -35124,33 +35113,6 @@ if (false) {} else {
 
 if (false) {} else {
   module.exports = __webpack_require__(/*! ./cjs/scheduler-tracing.development.js */ "../../../node_modules/scheduler/cjs/scheduler-tracing.development.js");
-}
-
-
-/***/ }),
-
-/***/ "../../../node_modules/tailwindcss/tailwind.css":
-/*!****************************************************************************************!*\
-  !*** C:/Users/samya/Codes/web/samyadh.github.io/node_modules/tailwindcss/tailwind.css ***!
-  \****************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var content = __webpack_require__(/*! !../@nrwl/web/src/utils/third-party/cli-files/plugins/raw-css-loader.js!../postcss-loader/dist/cjs.js??ref--5-oneOf-4-2!./tailwind.css */ "../../../node_modules/@nrwl/web/src/utils/third-party/cli-files/plugins/raw-css-loader.js!../../../node_modules/postcss-loader/dist/cjs.js?!../../../node_modules/tailwindcss/tailwind.css");
-
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
-
-var options = {}
-
-options.insert = "head";
-options.singleton = false;
-
-var update = __webpack_require__(/*! ../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
-
-if (content.locals) {
-  module.exports = content.locals;
 }
 
 
