@@ -1,105 +1,18 @@
 import React, { useState } from 'react';
+import {
+  workExperience,
+  roleDetails,
+  IProject,
+  eductation,
+  achivements,
+} from '../../../models/role-details';
 
 export function Resume() {
-  const roleDetails = [
-    {
-      title: 'Frontend Developer',
-      skills: [
-        'JavaScript',
-        'Angular',
-        'React',
-        'NodeJS',
-        'SCSS',
-        'HTML',
-        'PHP',
-        'Python',
-      ],
-    },
-    {
-      title: 'Team Lead',
-      skills: [
-        'JavaScript',
-        'Angular',
-        'React',
-        'NodeJS',
-        'PHP',
-        'Python',
-        'CI/CD',
-        'Agile',
-        'Scrum',
-      ],
-    },
-    {
-      title: 'Full-Stack Developer',
-      skills: [
-        'JavaScript',
-        'Angular',
-        'React',
-        'NodeJS',
-        'Python',
-        'Django',
-        'PHP',
-        'CI/CD',
-        'REST',
-        'SQL',
-        'No SQL',
-        'UI/UX Design',
-      ],
-    },
-    {
-      title: 'Project Manager',
-      skills: [
-        'Agile',
-        'Scrum',
-        'Lean',
-        'PMI ACP',
-        'Resource Management',
-        'Risk Management',
-        'Delivery Management',
-      ],
-    },
-    {
-      title: 'Tech Consultant',
-      skills: [
-        'JavaScript',
-        'Angular',
-        'React',
-        'UI/UX Design',
-        'Node',
-        'PHP',
-        'Python',
-        'Agile',
-        'Project Management',
-        'Product Management',
-        'DevOps',
-      ],
-    },
-  ];
-
-  const projectsDetails = {
-    sum: 'Summary',
-    det: 'Detailed',
-    none: 'None',
-  };
-
   const [skills, setSkills] = useState(roleDetails[0].skills);
   const [role, setRole] = useState(roleDetails[0]);
-  const [projectDetails, setProjectDetails] = useState('Summary');
 
   function addSkill(e: React.FocusEvent<HTMLInputElement>) {
     setSkills((skills) => [...skills, e.target.value]);
-  }
-
-  function getExperience() {
-    const startDate = '2014-01-01';
-    const diff = Math.floor(
-      new Date().getTime() - new Date(startDate).getTime()
-    );
-    const day = 1000 * 60 * 60 * 24;
-    const days = Math.floor(diff / day);
-    const months = Math.floor(days / 31);
-    const years = Math.floor(months / 12);
-    return years + '.' + months / 10 + ' years';
   }
 
   return (
@@ -131,23 +44,6 @@ export function Resume() {
             </select>
           </div>
           <div className="py-1 ml-2">
-            <h3 className="text-xs font-semibold">Projects</h3>
-            <select
-              className="text-xs border border-black cursor-pointer"
-              onChange={(e) => {
-                setProjectDetails(e.target.value);
-              }}
-            >
-              {Object.values(projectsDetails).map((role, key) => {
-                return (
-                  <option key={key} className="text-xs">
-                    {role}
-                  </option>
-                );
-              })}
-            </select>
-          </div>
-          <div className="py-1 ml-2">
             <h3 className="text-xs font-semibold">Skills</h3>
             <input
               type="text"
@@ -168,72 +64,176 @@ export function Resume() {
           </div>
         </div>
       </div>
-      <div className="w-[1180px] h-[1668px] m-auto box-border border-2 p-12 flex flex-col">
-        <div className="flex justify-between items-end">
-          <div>
-            <h1 className="text-3xl font-black">Samyadh Jain</h1>
-            <h4>samyadh.jain@gmail.com</h4>
-            <h4>+91 9739221385</h4>
+      <div className="w-[1180px] h-[1668px] m-auto box-border border-2 p-12 flex flex-col relative overflow-hidden">
+        <div className="absolute z-10 -rotate-3 top-0 left-1/2 w-[1800px]">
+          <ul>
+            {skills.map((skill, key) => {
+              return (
+                <li key={key} className="text-9xl font-black text-gray-100">
+                  {skill}
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+        <div className="z-10">
+          <div className="flex justify-between items-end">
+            <div>
+              <h1 className="text-3xl font-black inline-block">Samyadh Jain</h1>
+              <h1 className="text-sm font-bold mr-1">
+                {roleDetails[role.index].tagLine}
+              </h1>
+              <ul className="mb-1">
+                {skills.map((skill, key) => {
+                  return (
+                    <li
+                      key={key}
+                      className="inline-block mr-1 mt-1 text-xs px-2 py-[2px] bg-gray-800 text-white rounded"
+                    >
+                      {skill}
+                    </li>
+                  );
+                })}
+              </ul>
+              <a
+                className="text-xs bg-gray-200 mr-1 inline-block px-2 py-1 rounded"
+                href="tel:+919739221385"
+                target="_blank"
+                rel="noreferrer"
+              >
+                +91 9739221385
+              </a>
+              <a
+                className="text-xs bg-gray-200 mr-1 inline-block px-2 py-1 rounded"
+                href="mailTo:samyadh.jain@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                samyadh.jain@gmail.com
+              </a>
+              <a
+                className="text-xs bg-gray-200 mr-1 inline-block px-2 py-1 rounded"
+                href="https://samyadh.github.io"
+                target="_blank"
+                rel="noreferrer"
+              >
+                https://samyadh.github.io
+              </a>
+            </div>
           </div>
-          <div className="w-2/5 text-right">
+          <div className="h-[2px] bg-black mb-2 mt-4"></div>
+          <div className="intro">
+            <h3>{roleDetails[role.index].intro}</h3>
+          </div>
+          <div>
+            <h4 className="font-bold mt-1 border-b-2 border-black inline-block">
+              Work Experience
+            </h4>
+            <ul className="border-l-2 border-black pl-4 ml-2">
+              {workExperience.map((work, index) => {
+                if (
+                  work.hidden === undefined ||
+                  !work.hidden?.includes(role.index)
+                )
+                  return (
+                    <li
+                      key={index}
+                      className="relative pt-2 before:border-t-2 before:border-black before:content-center before:absolute before:left-[-28px] before:top-[22px] before:w-[14px]"
+                    >
+                      <h3 className="font-bold text-sm">
+                        {work.title + ' '}
+                        <span className="text-sm italic font-normal">
+                          at {work.company}, {work.period}
+                        </span>
+                      </h3>
+                      <div>
+                        {work.projectDetails && (
+                          <ul className="mb-1">
+                            {work.projectDetails?.map(
+                              (project: IProject, index: number) => {
+                                return (
+                                  <li
+                                    key={index}
+                                    className="relative before:border-t-2 before:rounded before:border-black before:content-center before:absolute before:left-[-6px] before:top-[6px] before:w-[10px] before:h-[10px] before:bg-black border-l-2 border-black pl-4 ml-2"
+                                  >
+                                    <h3 className="font-bold text-sm">
+                                      {project.title},{' '}
+                                      <span className="text-sm italic font-normal">
+                                        {project.techUsed}
+                                      </span>
+                                    </h3>
+                                    <p className="text-sm italic">
+                                      {project.description},{' '}
+                                      {project.contributions}
+                                    </p>
+                                  </li>
+                                );
+                              }
+                            )}
+                          </ul>
+                        )}
+                        <h4 className="text-sm font-bold">{work.projects}</h4>
+                      </div>
+                      <div>
+                        <ul className="pl-4 mt-1">
+                          {work.contributions.map((task, index) => {
+                            return (
+                              <li className="text-sm list-disc" key={index}>
+                                {task}
+                              </li>
+                            );
+                          })}
+                        </ul>
+                      </div>
+                    </li>
+                  );
+              })}
+            </ul>
+          </div>
+          {[0, 1, 2].includes(role.index) && (
+            <div className="font-bold mt-2">
+              <h4 className="font-bold mt-2 border-b-2 border-black inline-block">
+                Achivements
+              </h4>
+              <ul className="border-l-2 border-black pl-4 ml-2">
+                {achivements.map((goal, index) => {
+                  return (
+                    <li
+                      key={index}
+                      className="relative pt-1 before:border-t-2 before:border-black before:content-center before:absolute before:left-[-28px] before:top-[16px] before:w-[14px]"
+                    >
+                      <h4 className="text-sm">{goal}</h4>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          )}
+          <div>
+            <h4 className="font-bold mt-2 border-b-2 border-black pb-1">
+              Education
+            </h4>
             <ul>
-              {skills.map((skill, key) => {
+              {eductation.map((course, index) => {
                 return (
                   <li
-                    key={key}
-                    className="inline-block text-sm mx-1 border-b-2 border-black"
+                    key={index}
+                    className="relative inline-block w-1/2 pt-2 before:bg-black before:content-center before:absolute before:left-[12px] before:top-[-8px] before:h-[14px] before:w-[2px]"
                   >
-                    {skill}
+                    <h3 className="text-sm font-bold">
+                      {course.title},{' '}
+                      <span className="text-sm italic font-normal">
+                        Aggregate {course.percentage}
+                      </span>
+                    </h3>
+                    <h4 className="text-sm">
+                      {course.university}, {course.period}
+                    </h4>
                   </li>
                 );
               })}
             </ul>
           </div>
-        </div>
-        <div className="border-2 border-black mb-2 mt-4 rounded"></div>
-        <div className="flex">
-          {role.title === roleDetails[0].title && (
-            <h3>
-              <strong>{getExperience()}</strong> experience in building
-              pixel-perfect, beautiful and robust interface for products which
-              is used by millions of people around the world every day.
-            </h3>
-          )}
-          {role.title === roleDetails[1].title && (
-            <h3>
-              In <strong>{getExperience()}</strong> of my experience I have
-              managed teams sizing from 2 to 15 consisting diverse and
-              multilingual team-members. I always strive to lead as an example
-              which has helped me to build and nurture teams to perform
-              efficiently.
-            </h3>
-          )}
-          {role.title === roleDetails[2].title && (
-            <h3>
-              <strong>{getExperience()}</strong> experience in stitching kickass
-              functionalities together and create world class products. I love
-              logics and structure of coding, always look to write elegant and
-              efficient code no matter which programming language it is.
-            </h3>
-          )}
-          {role.title === roleDetails[3].title && (
-            <h3>
-              Technical Project Manager focused on working with mutli-functional
-              teams and increase customer satisfaction through process. Proven
-              experience is shipping world class products for lastx
-              <strong> {getExperience()}</strong>.
-            </h3>
-          )}
-          {role.title === roleDetails[4].title && (
-            <h3>
-              People who know me say I am "Jack of all trades". However, I feel
-              I know only enough to find, analyze and comprehend things that I
-              do not know. I enjoy taking complex problems and find simple but
-              beautiful solutions for them. With
-              <strong> {getExperience()}</strong> experience I always find my
-              self guiding tech products to perform to their best.
-            </h3>
-          )}
         </div>
       </div>
     </div>
