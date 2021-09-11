@@ -547,50 +547,13 @@ function Resume() {
           fileName: _jsxFileName,
           lineNumber: 128,
           columnNumber: 11
-        }, this), [0, 1, 2].includes(role.index) && /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("div", {
-          className: "font-bold mt-2",
-          children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("h4", {
-            className: "font-bold mt-2 border-b-2 border-black inline-block",
-            children: "Achivements"
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 194,
-            columnNumber: 15
-          }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("ul", {
-            className: "border-l-2 border-black pl-4 ml-2",
-            children: _models_role_details__WEBPACK_IMPORTED_MODULE_1__["achivements"].map((goal, index) => {
-              return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("li", {
-                className: "relative pt-1 before:border-t-2 before:border-black before:content-center before:absolute before:left-[-28px] before:top-[16px] before:w-[14px]",
-                children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("h4", {
-                  className: "text-sm",
-                  children: goal
-                }, void 0, false, {
-                  fileName: _jsxFileName,
-                  lineNumber: 204,
-                  columnNumber: 23
-                }, this)
-              }, index, false, {
-                fileName: _jsxFileName,
-                lineNumber: 200,
-                columnNumber: 21
-              }, this);
-            })
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 197,
-            columnNumber: 15
-          }, this)]
-        }, void 0, true, {
-          fileName: _jsxFileName,
-          lineNumber: 193,
-          columnNumber: 13
         }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("div", {
           children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("h4", {
             className: "font-bold mt-2 border-b-2 border-black pb-1",
             children: "Education"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 212,
+            lineNumber: 193,
             columnNumber: 13
           }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("ul", {
             children: _models_role_details__WEBPACK_IMPORTED_MODULE_1__["eductation"].map((course, index) => {
@@ -603,36 +566,72 @@ function Resume() {
                     children: ["Aggregate ", course.percentage]
                   }, void 0, true, {
                     fileName: _jsxFileName,
-                    lineNumber: 224,
+                    lineNumber: 205,
                     columnNumber: 23
                   }, this)]
                 }, void 0, true, {
                   fileName: _jsxFileName,
-                  lineNumber: 222,
+                  lineNumber: 203,
                   columnNumber: 21
                 }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("h4", {
                   className: "text-sm",
                   children: [course.university, ", ", course.period]
                 }, void 0, true, {
                   fileName: _jsxFileName,
-                  lineNumber: 228,
+                  lineNumber: 209,
                   columnNumber: 21
                 }, this)]
               }, index, true, {
                 fileName: _jsxFileName,
-                lineNumber: 218,
+                lineNumber: 199,
                 columnNumber: 19
               }, this);
             })
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 215,
+            lineNumber: 196,
             columnNumber: 13
           }, this)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 211,
+          lineNumber: 192,
           columnNumber: 11
+        }, this), [0, 1, 2].includes(role.index) && /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("div", {
+          children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("h4", {
+            className: "font-bold mt-2 border-b-2 border-black inline-block",
+            children: "Achivements"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 219,
+            columnNumber: 15
+          }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("ul", {
+            className: "border-l-2 border-black pl-4 ml-2",
+            children: _models_role_details__WEBPACK_IMPORTED_MODULE_1__["achivements"].map((goal, index) => {
+              return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("li", {
+                className: "relative pt-1 before:border-t-2 before:border-black before:content-center before:absolute before:left-[-28px] before:top-[16px] before:w-[14px]",
+                children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("h4", {
+                  className: "text-sm",
+                  children: goal
+                }, void 0, false, {
+                  fileName: _jsxFileName,
+                  lineNumber: 229,
+                  columnNumber: 23
+                }, this)
+              }, index, false, {
+                fileName: _jsxFileName,
+                lineNumber: 225,
+                columnNumber: 21
+              }, this);
+            })
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 222,
+            columnNumber: 15
+          }, this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 218,
+          columnNumber: 13
         }, this)]
       }, void 0, true, {
         fileName: _jsxFileName,

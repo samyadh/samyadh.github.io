@@ -189,25 +189,6 @@ export function Resume() {
               })}
             </ul>
           </div>
-          {[0, 1, 2].includes(role.index) && (
-            <div className="font-bold mt-2">
-              <h4 className="font-bold mt-2 border-b-2 border-black inline-block">
-                Achivements
-              </h4>
-              <ul className="border-l-2 border-black pl-4 ml-2">
-                {achivements.map((goal, index) => {
-                  return (
-                    <li
-                      key={index}
-                      className="relative pt-1 before:border-t-2 before:border-black before:content-center before:absolute before:left-[-28px] before:top-[16px] before:w-[14px]"
-                    >
-                      <h4 className="text-sm">{goal}</h4>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-          )}
           <div>
             <h4 className="font-bold mt-2 border-b-2 border-black pb-1">
               Education
@@ -233,6 +214,25 @@ export function Resume() {
               })}
             </ul>
           </div>
+          {[0, 1, 2].includes(role.index) && (
+            <div>
+              <h4 className="font-bold mt-2 border-b-2 border-black inline-block">
+                Achivements
+              </h4>
+              <ul className="border-l-2 border-black pl-4 ml-2">
+                {achivements.map((goal, index) => {
+                  return (
+                    <li
+                      key={index}
+                      className="relative pt-1 before:border-t-2 before:border-black before:content-center before:absolute before:left-[-28px] before:top-[16px] before:w-[14px]"
+                    >
+                      <h4 className="text-sm">{goal}</h4>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          )}
         </div>
       </div>
     </div>
