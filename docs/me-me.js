@@ -469,7 +469,7 @@ var _jsxFileName = "C:\\Users\\samya\\Codes\\web\\samyadh.github.io\\apps\\web\\
 class Me extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   constructor(props) {
     super(props);
-    const devMode = window.localStorage.getItem('sam');
+    const devMode = window.localStorage.getItem('dev');
 
     if (devMode) {
       this.state = {
@@ -488,89 +488,101 @@ class Me extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
 
   render() {
     return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("div", {
-      className: "min-h-screen flex flex-col content-center justify-around",
-      children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("div", {
-        className: "xl:mx-16 mx-6",
-        children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("div", {
-          children: [this.state.count >= 10 && /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("div", {
-            className: "text-right mb-4",
-            children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-              to: "/",
-              className: "inline-block mx-4",
-              children: "Home"
+      children: [this.state.count >= 10 && /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("div", {
+        className: "mb-4 p-4",
+        children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+          to: "/",
+          className: "inline-block mx-4",
+          children: "Home"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 33,
+          columnNumber: 13
+        }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+          to: "/me",
+          className: "inline-block mx-4",
+          children: "Me"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 36,
+          columnNumber: 13
+        }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+          to: "/projects",
+          className: "inline-block mx-4",
+          children: "Projects"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 39,
+          columnNumber: 13
+        }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+          to: "/resume",
+          className: "inline-block mx-4",
+          children: "Resume"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 42,
+          columnNumber: 13
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 32,
+        columnNumber: 11
+      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("div", {
+        className: "min-h-screen flex flex-col content-center justify-around",
+        children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("div", {
+          className: "xl:mx-16 mx-6",
+          children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("div", {
+            children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("h1", {
+              className: "xl:text-9xl font-extrabold xl:text-right text-center text-6xl lg:mb-4",
+              onClick: () => {
+                this.setState({
+                  count: this.state.count + 1
+                });
+
+                if (this.state.count === 9) {
+                  window.localStorage.setItem('dev', 'true');
+                }
+              },
+              children: "Samyadh Jain"
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 35,
-              columnNumber: 17
-            }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-              to: "/me",
-              className: "inline-block mx-4",
-              children: "Me"
+              lineNumber: 50,
+              columnNumber: 15
+            }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("h3", {
+              className: "xl:text-2xl text-base font-bold xl:text-right text-center mt-4",
+              children: "Programmer, Biker, Tech Enthusiast, Content Creator"
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 38,
-              columnNumber: 17
-            }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-              to: "/projects",
-              className: "inline-block mx-4",
-              children: "Projects"
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 41,
-              columnNumber: 17
-            }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-              to: "/resume",
-              className: "inline-block mx-4",
-              children: "Resume"
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 44,
-              columnNumber: 17
+              lineNumber: 61,
+              columnNumber: 15
             }, this)]
           }, void 0, true, {
             fileName: _jsxFileName,
-            lineNumber: 34,
-            columnNumber: 15
-          }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("h1", {
-            className: "xl:text-9xl font-extrabold xl:text-right text-center text-6xl lg:mb-4",
-            onClick: () => this.setState({
-              count: this.state.count + 1
-            }),
-            children: "Samyadh Jain"
-          }, void 0, false, {
-            fileName: _jsxFileName,
             lineNumber: 49,
             columnNumber: 13
-          }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("h3", {
-            className: "xl:text-2xl text-base font-bold xl:text-right text-center mt-4",
-            children: "Programmer, Biker, Tech Enthusiast, Content Creator"
+          }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("hr", {
+            className: "bg-green-600 h-1 mt-8 mb-4"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 55,
+            lineNumber: 65,
             columnNumber: 13
-          }, this)]
-        }, void 0, true, {
-          fileName: _jsxFileName,
-          lineNumber: 32,
-          columnNumber: 11
-        }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("hr", {
-          className: "bg-green-600 h-1 mt-8 mb-4"
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 59,
-          columnNumber: 11
-        }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("div", {
-          children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("ul", {
-            className: "flex xl:justify-end  justify-evenly content-center",
-            children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("li", {
-              children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("a", {
-                className: "hover:bg-green-600",
-                target: "_blank",
-                rel: "noreferrer",
-                href: "https://github.com/samyadh",
-                children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("img", {
-                  alt: "Github",
-                  src: "assets/images/github.png"
+          }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("div", {
+            children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("ul", {
+              className: "flex xl:justify-end  justify-evenly content-center",
+              children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("li", {
+                children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("a", {
+                  className: "hover:bg-green-600",
+                  target: "_blank",
+                  rel: "noreferrer",
+                  href: "https://github.com/samyadh",
+                  children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("img", {
+                    alt: "Github",
+                    src: "assets/images/github.png"
+                  }, void 0, false, {
+                    fileName: _jsxFileName,
+                    lineNumber: 75,
+                    columnNumber: 21
+                  }, this)
                 }, void 0, false, {
                   fileName: _jsxFileName,
                   lineNumber: 69,
@@ -578,22 +590,22 @@ class Me extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                 }, this)
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 63,
+                lineNumber: 68,
                 columnNumber: 17
-              }, this)
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 62,
-              columnNumber: 15
-            }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("li", {
-              children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("a", {
-                className: "hover:bg-green-600",
-                target: "_blank",
-                rel: "noreferrer",
-                href: "https://samyadh.medium.com/",
-                children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("img", {
-                  alt: "Medium",
-                  src: "assets/images/blogger.png"
+              }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("li", {
+                children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("a", {
+                  className: "hover:bg-green-600",
+                  target: "_blank",
+                  rel: "noreferrer",
+                  href: "https://samyadh.medium.com/",
+                  children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("img", {
+                    alt: "Medium",
+                    src: "assets/images/blogger.png"
+                  }, void 0, false, {
+                    fileName: _jsxFileName,
+                    lineNumber: 85,
+                    columnNumber: 21
+                  }, this)
                 }, void 0, false, {
                   fileName: _jsxFileName,
                   lineNumber: 79,
@@ -601,22 +613,22 @@ class Me extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                 }, this)
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 73,
+                lineNumber: 78,
                 columnNumber: 17
-              }, this)
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 72,
-              columnNumber: 15
-            }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("li", {
-              children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("a", {
-                className: "hover:bg-green-600",
-                target: "_blank",
-                rel: "noreferrer",
-                href: "https://www.instagram.com/riding.theory/",
-                children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("img", {
-                  alt: "Instagram",
-                  src: "assets/images/instagram.png"
+              }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("li", {
+                children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("a", {
+                  className: "hover:bg-green-600",
+                  target: "_blank",
+                  rel: "noreferrer",
+                  href: "https://www.instagram.com/riding.theory/",
+                  children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("img", {
+                    alt: "Instagram",
+                    src: "assets/images/instagram.png"
+                  }, void 0, false, {
+                    fileName: _jsxFileName,
+                    lineNumber: 95,
+                    columnNumber: 21
+                  }, this)
                 }, void 0, false, {
                   fileName: _jsxFileName,
                   lineNumber: 89,
@@ -624,22 +636,22 @@ class Me extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                 }, this)
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 83,
+                lineNumber: 88,
                 columnNumber: 17
-              }, this)
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 82,
-              columnNumber: 15
-            }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("li", {
-              children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("a", {
-                className: "hover:bg-green-600",
-                target: "_blank",
-                rel: "noreferrer",
-                href: "https://www.youtube.com/channel/UCMPtRfKlSYolY_ySp424Icg",
-                children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("img", {
-                  alt: "Youtube",
-                  src: "assets/images/youtube.png"
+              }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("li", {
+                children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("a", {
+                  className: "hover:bg-green-600",
+                  target: "_blank",
+                  rel: "noreferrer",
+                  href: "https://www.youtube.com/channel/UCMPtRfKlSYolY_ySp424Icg",
+                  children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("img", {
+                    alt: "Youtube",
+                    src: "assets/images/youtube.png"
+                  }, void 0, false, {
+                    fileName: _jsxFileName,
+                    lineNumber: 105,
+                    columnNumber: 21
+                  }, this)
                 }, void 0, false, {
                   fileName: _jsxFileName,
                   lineNumber: 99,
@@ -647,22 +659,22 @@ class Me extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                 }, this)
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 93,
+                lineNumber: 98,
                 columnNumber: 17
-              }, this)
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 92,
-              columnNumber: 15
-            }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("li", {
-              children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("a", {
-                className: "hover:bg-green-600",
-                target: "_blank",
-                rel: "noreferrer",
-                href: "mailto:samyadh.jain@gmail.com",
-                children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("img", {
-                  alt: "Email",
-                  src: "assets/images/email.png"
+              }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("li", {
+                children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("a", {
+                  className: "hover:bg-green-600",
+                  target: "_blank",
+                  rel: "noreferrer",
+                  href: "mailto:samyadh.jain@gmail.com",
+                  children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("img", {
+                    alt: "Email",
+                    src: "assets/images/email.png"
+                  }, void 0, false, {
+                    fileName: _jsxFileName,
+                    lineNumber: 115,
+                    columnNumber: 21
+                  }, this)
                 }, void 0, false, {
                   fileName: _jsxFileName,
                   lineNumber: 109,
@@ -670,30 +682,30 @@ class Me extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                 }, this)
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 103,
+                lineNumber: 108,
                 columnNumber: 17
-              }, this)
-            }, void 0, false, {
+              }, this)]
+            }, void 0, true, {
               fileName: _jsxFileName,
-              lineNumber: 102,
+              lineNumber: 67,
               columnNumber: 15
-            }, this)]
-          }, void 0, true, {
+            }, this)
+          }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 61,
+            lineNumber: 66,
             columnNumber: 13
-          }, this)
-        }, void 0, false, {
+          }, this)]
+        }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 60,
+          lineNumber: 48,
           columnNumber: 11
-        }, this)]
-      }, void 0, true, {
+        }, this)
+      }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 31,
+        lineNumber: 47,
         columnNumber: 9
-      }, this)
-    }, void 0, false, {
+      }, this)]
+    }, void 0, true, {
       fileName: _jsxFileName,
       lineNumber: 30,
       columnNumber: 7
