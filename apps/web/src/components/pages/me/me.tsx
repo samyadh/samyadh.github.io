@@ -1,7 +1,25 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './me.module.scss';
 
-export class Me extends React.Component {
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
+interface MeProps {}
+export class Me extends React.Component<MeProps, { count: number }> {
+  constructor(props: MeProps) {
+    super(props);
+
+    const devMode = window.localStorage.getItem('dev');
+    if (devMode) {
+      this.state = {
+        count: 10,
+      };
+    } else {
+      this.state = {
+        count: 0,
+      };
+    }
+  }
+
   componentDidMount() {
     document.title =
       'Samyadh Jain | Programmer, Biker, Tech Enthusiast, Content Creator';
@@ -12,7 +30,26 @@ export class Me extends React.Component {
       <div className="min-h-screen flex flex-col content-center justify-around">
         <div className="xl:mx-16 mx-6">
           <div>
-            <h1 className="xl:text-9xl font-extrabold xl:text-right text-center text-6xl lg:mb-4">
+            {this.state.count >= 10 && (
+              <div className="text-right mb-4">
+                <Link to="/" className="inline-block mx-4">
+                  Home
+                </Link>
+                <Link to="/me" className="inline-block mx-4">
+                  Me
+                </Link>
+                <Link to="/projects" className="inline-block mx-4">
+                  Projects
+                </Link>
+                <Link to="/resume" className="inline-block mx-4">
+                  Resume
+                </Link>
+              </div>
+            )}
+            <h1
+              className="xl:text-9xl font-extrabold xl:text-right text-center text-6xl lg:mb-4"
+              onClick={() => this.setState({ count: this.state.count + 1 })}
+            >
               Samyadh Jain
             </h1>
             <h3 className="xl:text-2xl text-base font-bold xl:text-right text-center mt-4">
