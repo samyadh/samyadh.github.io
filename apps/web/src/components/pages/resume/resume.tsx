@@ -131,62 +131,61 @@ export function Resume() {
             </h4>
             <ul className="border-l-2 border-black pl-4 ml-2">
               {workExperience.map((work, index) => {
-                if (
-                  work.hidden === undefined ||
-                  !work.hidden?.includes(role.index)
-                )
-                  return (
-                    <li
-                      key={index}
-                      className="relative pt-2 before:border-t-2 before:border-black before:content-center before:absolute before:left-[-28px] before:top-[22px] before:w-[14px]"
-                    >
-                      <h3 className="font-bold text-sm">
-                        {work.title + ' '}
-                        <span className="text-sm italic font-normal">
-                          at {work.company}, {work.period}
-                        </span>
-                      </h3>
-                      <div>
-                        {work.projectDetails && (
-                          <ul className="mb-1">
-                            {work.projectDetails?.map(
-                              (project: IProject, index: number) => {
-                                return (
-                                  <li
-                                    key={index}
-                                    className="relative before:border-t-2 before:rounded before:border-black before:content-center before:absolute before:left-[-6px] before:top-[6px] before:w-[10px] before:h-[10px] before:bg-black border-l-2 border-black pl-4 ml-2"
-                                  >
-                                    <h3 className="font-bold text-sm">
-                                      {project.title},{' '}
-                                      <span className="text-sm italic font-normal">
-                                        {project.techUsed}
-                                      </span>
-                                    </h3>
-                                    <p className="text-sm italic">
-                                      {project.description},{' '}
-                                      {project.contributions}
-                                    </p>
-                                  </li>
-                                );
-                              }
-                            )}
-                          </ul>
-                        )}
-                        <h4 className="text-sm font-bold">{work.projects}</h4>
-                      </div>
-                      <div>
-                        <ul className="pl-4 mt-1">
-                          {work.contributions.map((task, index) => {
-                            return (
-                              <li className="text-sm list-disc" key={index}>
-                                {task}
-                              </li>
-                            );
-                          })}
+                return work.hidden === undefined ||
+                  !work.hidden?.includes(role.index) ? (
+                  <li
+                    key={index}
+                    className="relative pt-2 before:border-t-2 before:border-black before:content-center before:absolute before:left-[-28px] before:top-[22px] before:w-[14px]"
+                  >
+                    <h3 className="font-bold text-sm">
+                      {work.title + ' '}
+                      <span className="text-sm italic font-normal">
+                        at {work.company}, {work.period}
+                      </span>
+                    </h3>
+                    <div>
+                      {work.projectDetails && (
+                        <ul className="mb-1">
+                          {work.projectDetails?.map(
+                            (project: IProject, index: number) => {
+                              return (
+                                <li
+                                  key={index}
+                                  className="relative before:border-t-2 before:rounded before:border-black before:content-center before:absolute before:left-[-6px] before:top-[6px] before:w-[10px] before:h-[10px] before:bg-black border-l-2 border-black pl-4 ml-2"
+                                >
+                                  <h3 className="font-bold text-sm">
+                                    {project.title},{' '}
+                                    <span className="text-sm italic font-normal">
+                                      {project.techUsed}
+                                    </span>
+                                  </h3>
+                                  <p className="text-sm italic">
+                                    {project.description},{' '}
+                                    {project.contributions}
+                                  </p>
+                                </li>
+                              );
+                            }
+                          )}
                         </ul>
-                      </div>
-                    </li>
-                  );
+                      )}
+                      <h4 className="text-sm font-bold">{work.projects}</h4>
+                    </div>
+                    <div>
+                      <ul className="pl-4 mt-1">
+                        {work.contributions.map((task, index) => {
+                          return (
+                            <li className="text-sm list-disc" key={index}>
+                              {task}
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
+                  </li>
+                ) : (
+                  ''
+                );
               })}
             </ul>
           </div>
