@@ -217,11 +217,12 @@ export const achivements = [
 ];
 
 export function getExperience() {
-  const startDate = '2014-01-01';
+  const startDate = '2014-01-06';
   const diff = Math.floor(new Date().getTime() - new Date(startDate).getTime());
   const day = 1000 * 60 * 60 * 24;
   const days = Math.floor(diff / day);
   const months = Math.floor(days / 31);
   const years = Math.floor(months / 12);
-  return years + '.' + months / 10 + ' years';
+  const monthsInAddition = Math.round((days - years * 365.25) / 30.41);
+  return years + '.' + monthsInAddition + ' years';
 }
