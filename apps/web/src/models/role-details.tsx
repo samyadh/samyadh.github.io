@@ -166,7 +166,7 @@ export const workExperience = [
       'Readers Digest website/CMS, Taste of Home website/CMS, Family Handyman website/CMS, Newsletter, Saleforce',
   },
   {
-    title: 'Web Developer',
+    title: 'PHP Developer',
     company: 'Rossitek Software Solutions Pvt Ltd',
     period: 'Jan 2014 - Dec 2014',
     contributions: [

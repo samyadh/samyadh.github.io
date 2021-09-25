@@ -767,7 +767,7 @@ const workExperience = [{
   contributions: ['Create & implement methods to increase the efficiency and productivity of the consumer marketing email delivery team.', 'Collaborate with offshore designers and develop the best UI architecture for various well-known content delivery websites.', 'Design and develop one-off transactional pages across e-commerce portals and perform A/B testing results.', 'Follow the newest trends and technologies across the world and provide solutions to problems in existing system.'],
   projects: 'Readers Digest website/CMS, Taste of Home website/CMS, Family Handyman website/CMS, Newsletter, Saleforce'
 }, {
-  title: 'Web Developer',
+  title: 'PHP Developer',
   company: 'Rossitek Software Solutions Pvt Ltd',
   period: 'Jan 2014 - Dec 2014',
   contributions: ['Interact with clients across the world to understand requirements and develop web and app systems.', 'Create responsive websites for various clients.', 'Discuss and develop REST APIs for Android, IOS apps to consume.'],
