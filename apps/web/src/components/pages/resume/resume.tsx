@@ -47,7 +47,7 @@ export function Resume() {
             <h3 className="text-xs font-semibold">Skills</h3>
             <input
               type="text"
-              className="text-xs border border-black cursor-pointer px-2 w-60"
+              className="px-2 text-xs border border-black cursor-pointer w-60"
               onBlur={addSkill}
             />
           </div>
@@ -57,7 +57,7 @@ export function Resume() {
               onClick={() => {
                 window.print();
               }}
-              className="text-xs font-semibold uppercase py-0 px-1 border border-black mt-5"
+              className="px-1 py-0 mt-5 text-xs font-semibold uppercase border border-black"
             >
               Export
             </button>
@@ -69,7 +69,7 @@ export function Resume() {
           <ul>
             {skills.map((skill, key) => {
               return (
-                <li key={key} className="text-9xl font-black text-gray-100">
+                <li key={key} className="font-black text-gray-100 text-9xl">
                   {skill}
                 </li>
               );
@@ -77,10 +77,10 @@ export function Resume() {
           </ul>
         </div>
         <div className="z-10">
-          <div className="flex justify-between items-end">
+          <div className="flex items-end justify-between">
             <div>
-              <h1 className="text-3xl font-black inline-block">Samyadh Jain</h1>
-              <h1 className="text-sm font-bold mr-1">
+              <h1 className="inline-block text-3xl font-black">Samyadh Jain</h1>
+              <h1 className="mr-1 text-sm font-bold">
                 {roleDetails[role.index].tagLine}
               </h1>
               <ul className="mb-1">
@@ -96,7 +96,7 @@ export function Resume() {
                 })}
               </ul>
               <a
-                className="text-xs bg-gray-200 mr-1 inline-block px-2 py-1 rounded"
+                className="inline-block px-2 py-1 mr-1 text-xs bg-gray-200 rounded"
                 href="tel:+919739221385"
                 target="_blank"
                 rel="noreferrer"
@@ -104,7 +104,7 @@ export function Resume() {
                 +91 9739221385
               </a>
               <a
-                className="text-xs bg-gray-200 mr-1 inline-block px-2 py-1 rounded"
+                className="inline-block px-2 py-1 mr-1 text-xs bg-gray-200 rounded"
                 href="mailTo:samyadh.jain@gmail.com"
                 target="_blank"
                 rel="noreferrer"
@@ -112,7 +112,7 @@ export function Resume() {
                 samyadh.jain@gmail.com
               </a>
               <a
-                className="text-xs bg-gray-200 mr-1 inline-block px-2 py-1 rounded"
+                className="inline-block px-2 py-1 mr-1 text-xs bg-gray-200 rounded"
                 href="https://samyadh.github.io"
                 target="_blank"
                 rel="noreferrer"
@@ -126,10 +126,10 @@ export function Resume() {
             <h3>{roleDetails[role.index].intro}</h3>
           </div>
           <div>
-            <h4 className="font-bold mt-1 border-b-2 border-black inline-block">
+            <h4 className="inline-block mt-1 font-bold border-b-2 border-black">
               Work Experience
             </h4>
-            <ul className="border-l-2 border-black pl-4 ml-2">
+            <ul className="pl-4 ml-2 border-l-2 border-black">
               {workExperience.map((work, index) => {
                 return work.hidden === undefined ||
                   !work.hidden?.includes(role.index) ? (
@@ -137,11 +137,13 @@ export function Resume() {
                     key={index}
                     className="relative pt-2 before:border-t-2 before:border-black before:content-center before:absolute before:left-[-28px] before:top-[22px] before:w-[14px]"
                   >
-                    <h3 className="font-bold text-sm">
+                    <h3 className="text-sm font-bold">
                       {work.title + ' '}
-                      <span className="text-sm italic font-normal">
-                        at {work.company}, {work.period}
-                      </span>
+                      {!roleDetails[role.index].freelance && (
+                        <span className="text-sm italic font-normal">
+                          at {work.company}, {work.period}
+                        </span>
+                      )}
                     </h3>
                     <div>
                       {work.projectDetails && (
@@ -153,7 +155,7 @@ export function Resume() {
                                   key={index}
                                   className="relative before:border-t-2 before:rounded before:border-black before:content-center before:absolute before:left-[-6px] before:top-[6px] before:w-[10px] before:h-[10px] before:bg-black border-l-2 border-black pl-4 ml-2"
                                 >
-                                  <h3 className="font-bold text-sm">
+                                  <h3 className="text-sm font-bold">
                                     {project.title},{' '}
                                     <span className="text-sm italic font-normal">
                                       {project.techUsed}
@@ -190,7 +192,7 @@ export function Resume() {
             </ul>
           </div>
           <div>
-            <h4 className="font-bold mt-2 border-b-2 border-black pb-1">
+            <h4 className="pb-1 mt-2 font-bold border-b-2 border-black">
               Education
             </h4>
             <ul>
@@ -216,10 +218,10 @@ export function Resume() {
           </div>
           {[0, 1, 2].includes(role.index) && (
             <div>
-              <h4 className="font-bold mt-2 border-b-2 border-black inline-block">
+              <h4 className="inline-block mt-2 font-bold border-b-2 border-black">
                 Achivements
               </h4>
-              <ul className="border-l-2 border-black pl-4 ml-2">
+              <ul className="pl-4 ml-2 border-l-2 border-black">
                 {achivements.map((goal, index) => {
                   return (
                     <li

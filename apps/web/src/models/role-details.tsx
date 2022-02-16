@@ -12,7 +12,7 @@ export const roleDetails = [
   {
     index: 0,
     title: 'Lead UI Developer',
-    tagLine: 'Lead UI Developer with ' + getExperience() + ' experience',
+    tagLine: 'Lead UI Developer with ' + getExperience() + '+ years experience',
     skills: [
       'JavaScript',
       'Angular',
@@ -29,7 +29,7 @@ export const roleDetails = [
   {
     index: 1,
     title: 'Team Lead',
-    tagLine: 'Team Lead with ' + getExperience() + ' experience',
+    tagLine: 'Team Lead with ' + getExperience() + '+ years experience',
     skills: [
       'Agile',
       'Scrum',
@@ -48,7 +48,8 @@ export const roleDetails = [
   {
     index: 2,
     title: 'Full-Stack Developer',
-    tagLine: 'Full-Stack Developer with ' + getExperience() + ' experience',
+    tagLine:
+      'Full-Stack Developer with ' + getExperience() + '+ years experience',
     skills: [
       'NodeJS',
       'JavaScript',
@@ -68,7 +69,9 @@ export const roleDetails = [
     index: 3,
     title: 'Technical Project Manager',
     tagLine:
-      'Technical Project Manager with ' + getExperience() + ' experience',
+      'Technical Project Manager with ' +
+      getExperience() +
+      '+ years experience',
     skills: [
       'Agile',
       'Scrum',
@@ -84,7 +87,7 @@ export const roleDetails = [
   {
     index: 4,
     title: 'Tech Consultant',
-    tagLine: 'Tech Consultant with ' + getExperience() + ' experience',
+    tagLine: 'Tech Consultant with ' + getExperience() + '+ years experience',
     skills: [
       'Project Management',
       'Product Management',
@@ -98,6 +101,28 @@ export const roleDetails = [
       'Agile',
       'DevOps',
     ],
+    intro:
+      'People who know me say I am "Jack of all trades". However, I feel I know only enough to find, analyze and comprehend things that I do not know. I enjoy taking complex problems and find simple but beautiful solutions for them. Proven experience in guiding tech products to perform to their best.',
+  },
+  {
+    index: 5,
+    title: 'Freelancer',
+    tagLine:
+      'Tech Consultant with ' + (3 + getExperience()) + '+ years experience',
+    skills: [
+      'Project Management',
+      'Product Management',
+      'UI/UX Design',
+      'Node',
+      'Python',
+      'PHP',
+      'React',
+      'Angular',
+      'JavaScript',
+      'Agile',
+      'DevOps',
+    ],
+    freelance: true,
     intro:
       'People who know me say I am "Jack of all trades". However, I feel I know only enough to find, analyze and comprehend things that I do not know. I enjoy taking complex problems and find simple but beautiful solutions for them. Proven experience in guiding tech products to perform to their best.',
   },
@@ -121,7 +146,7 @@ export const workExperience = [
         title: 'Trust Your Supplier',
         company: 'Chainyard',
         role: 'Team Lead',
-        techUsed: 'React, TypeScript, MongoDb, NodeJS, Jenkins',
+        techUsed: 'React, TypeScript, MongoDb, Node',
         description:
           'Trust Your Supplier is the window to the information you need for centralized planning & supplier oversight',
         contributions:
@@ -221,5 +246,5 @@ export function getExperience() {
   const startDate = moment(['2014-01-06']);
   const today = moment();
   const years = today.diff(startDate, 'year');
-  return years + '+ years';
+  return years;
 }
