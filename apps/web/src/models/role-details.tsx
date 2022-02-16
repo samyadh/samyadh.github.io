@@ -1,3 +1,4 @@
+import moment from 'moment';
 export interface IProject {
   title: string;
   company: string;
@@ -114,8 +115,18 @@ export const workExperience = [
       'Motivate, encourage the team to deliver lean and robust applications on time.',
       'Deliver applications to clients under a given time frame and help them to gain more familiarity with the system.',
     ],
-    projects: 'TransportSimple, Vndly, Kredily, IT People',
+    projects: 'Lenovo Vantage, TransportSimple, Vndly, Kredily, IT People',
     projectDetails: [
+      {
+        title: 'Trust Your Supplier',
+        company: 'Chainyard',
+        role: 'Team Lead',
+        techUsed: 'React, TypeScript, MongoDb, NodeJS, Jenkins',
+        description:
+          'Trust Your Supplier is the window to the information you need for centralized planning & supplier oversight',
+        contributions:
+          'i am helping the team in creating some of the beautiful and snappy user interfaces, also build the Services, librarys used across multiple platforms offered. Create / Integrate services that interacted with various service providers. Suggest and create POCs, also manage a team of 5 developers.',
+      },
       {
         title: 'Lenovo LanSchool',
         company: 'Lenovo Software',
@@ -124,17 +135,7 @@ export const workExperience = [
         description:
           'LanSchool is a Classroom Management & Guidance Web Platform. Some of the features are Communication and Screen Sharing, Limit web, Blank screen, Thumbnail monitoring, Messaging, Etc',
         contributions:
-          'I am involved in building microservices and reusable components, libraries for the platform using TDD. Also, work with UX designers to optimize user interactions. In addition to them, I work on various POCs for the platform and constantly mentoring juniors.',
-      },
-      {
-        title: 'Lenovo Vantage',
-        company: 'Lenovo Software',
-        role: 'Lead UI Developer',
-        techUsed: 'Angular 11, NodeJS, UWP, Shell',
-        description:
-          'Lenovo Vantage is a UWP application that helps users to manage their device settings, improve performance, and enhance their PC - no matter how you use it.',
-        contributions:
-          'I was in charge of creating some of the beautiful and snappy user interfaces, also build the NodeJS library which interacted with the machine (Shell) to retrieve and update settings. Create / Integrate services that interacted with various service providers which are used in computers. Suggest and create POCs, also manage a team of 5 developers.',
+          'I was involved in building microservices and reusable components, libraries for the platform using TDD. Also, work with UX designers to optimize user interactions. In addition to them, I work on various POCs for the platform and constantly mentoring juniors.',
       },
     ],
   },
@@ -217,12 +218,8 @@ export const achivements = [
 ];
 
 export function getExperience() {
-  const startDate = '2014-01-06';
-  const diff = Math.floor(new Date().getTime() - new Date(startDate).getTime());
-  const day = 1000 * 60 * 60 * 24;
-  const days = Math.floor(diff / day);
-  const months = Math.floor(days / 31);
-  const years = Math.floor(months / 12);
-  const monthsInAddition = Math.round((days - years * 365.25) / 30.41);
-  return years + '.' + monthsInAddition + ' years';
+  const startDate = moment(['2014-01-06']);
+  const today = moment();
+  const years = today.diff(startDate, 'year');
+  return years + '+ years';
 }
