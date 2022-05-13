@@ -747,20 +747,34 @@ function Resume() {
 
               return work.hidden === undefined || !((_work$hidden = work.hidden) !== null && _work$hidden !== void 0 && _work$hidden.includes(role.index)) ? /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("li", {
                 className: "relative pt-2 before:border-t-2 before:border-black before:content-center before:absolute before:left-[-28px] before:top-[22px] before:w-[14px]",
-                children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("h3", {
+                children: [work.roles ? work.roles.map((mrole, mIndex) => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("h3", {
+                  className: "text-sm font-bold",
+                  children: [mrole.title + ' ', !_models_role_details__WEBPACK_IMPORTED_MODULE_1__["roleDetails"][role.index].freelance && /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("span", {
+                    className: "text-sm italic font-normal",
+                    children: mIndex === 0 ? `at ${mrole.company}, ${mrole.period}` : `from ${mrole.period}`
+                  }, void 0, false, {
+                    fileName: _jsxFileName,
+                    lineNumber: 145,
+                    columnNumber: 29
+                  }, this)]
+                }, void 0, true, {
+                  fileName: _jsxFileName,
+                  lineNumber: 142,
+                  columnNumber: 25
+                }, this)) : /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("h3", {
                   className: "text-sm font-bold",
                   children: [work.title + ' ', !_models_role_details__WEBPACK_IMPORTED_MODULE_1__["roleDetails"][role.index].freelance && /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("span", {
                     className: "text-sm italic font-normal",
                     children: ["at ", work.company, ", ", work.period]
                   }, void 0, true, {
                     fileName: _jsxFileName,
-                    lineNumber: 143,
-                    columnNumber: 25
+                    lineNumber: 157,
+                    columnNumber: 27
                   }, this)]
                 }, void 0, true, {
                   fileName: _jsxFileName,
-                  lineNumber: 140,
-                  columnNumber: 21
+                  lineNumber: 154,
+                  columnNumber: 23
                 }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("div", {
                   children: [work.projectDetails && /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("ul", {
                     className: "mb-1",
@@ -774,42 +788,42 @@ function Resume() {
                             children: project.techUsed
                           }, void 0, false, {
                             fileName: _jsxFileName,
-                            lineNumber: 160,
+                            lineNumber: 175,
                             columnNumber: 37
                           }, this)]
                         }, void 0, true, {
                           fileName: _jsxFileName,
-                          lineNumber: 158,
+                          lineNumber: 173,
                           columnNumber: 35
                         }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("p", {
                           className: "text-sm italic",
                           children: [project.description, ",", ' ', project.contributions]
                         }, void 0, true, {
                           fileName: _jsxFileName,
-                          lineNumber: 164,
+                          lineNumber: 179,
                           columnNumber: 35
                         }, this)]
                       }, index, true, {
                         fileName: _jsxFileName,
-                        lineNumber: 154,
+                        lineNumber: 169,
                         columnNumber: 33
                       }, this);
                     })
                   }, void 0, false, {
                     fileName: _jsxFileName,
-                    lineNumber: 150,
+                    lineNumber: 165,
                     columnNumber: 25
                   }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("h4", {
                     className: "text-sm font-bold",
                     children: work.projects
                   }, void 0, false, {
                     fileName: _jsxFileName,
-                    lineNumber: 174,
+                    lineNumber: 189,
                     columnNumber: 23
                   }, this)]
                 }, void 0, true, {
                   fileName: _jsxFileName,
-                  lineNumber: 148,
+                  lineNumber: 163,
                   columnNumber: 21
                 }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("div", {
                   children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("ul", {
@@ -820,18 +834,18 @@ function Resume() {
                         children: task
                       }, index, false, {
                         fileName: _jsxFileName,
-                        lineNumber: 180,
+                        lineNumber: 195,
                         columnNumber: 29
                       }, this);
                     })
                   }, void 0, false, {
                     fileName: _jsxFileName,
-                    lineNumber: 177,
+                    lineNumber: 192,
                     columnNumber: 23
                   }, this)
                 }, void 0, false, {
                   fileName: _jsxFileName,
-                  lineNumber: 176,
+                  lineNumber: 191,
                   columnNumber: 21
                 }, this)]
               }, index, true, {
@@ -855,7 +869,7 @@ function Resume() {
             children: "Education"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 195,
+            lineNumber: 210,
             columnNumber: 13
           }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("ul", {
             children: _models_role_details__WEBPACK_IMPORTED_MODULE_1__["eductation"].map((course, index) => {
@@ -868,35 +882,35 @@ function Resume() {
                     children: ["Aggregate ", course.percentage]
                   }, void 0, true, {
                     fileName: _jsxFileName,
-                    lineNumber: 207,
+                    lineNumber: 222,
                     columnNumber: 23
                   }, this)]
                 }, void 0, true, {
                   fileName: _jsxFileName,
-                  lineNumber: 205,
+                  lineNumber: 220,
                   columnNumber: 21
                 }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("h4", {
                   className: "text-sm",
                   children: [course.university, ", ", course.period]
                 }, void 0, true, {
                   fileName: _jsxFileName,
-                  lineNumber: 211,
+                  lineNumber: 226,
                   columnNumber: 21
                 }, this)]
               }, index, true, {
                 fileName: _jsxFileName,
-                lineNumber: 201,
+                lineNumber: 216,
                 columnNumber: 19
               }, this);
             })
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 198,
+            lineNumber: 213,
             columnNumber: 13
           }, this)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 194,
+          lineNumber: 209,
           columnNumber: 11
         }, this), [0, 1, 2].includes(role.index) && /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("div", {
           children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("h4", {
@@ -904,7 +918,7 @@ function Resume() {
             children: "Achivements"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 221,
+            lineNumber: 236,
             columnNumber: 15
           }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("ul", {
             className: "pl-4 ml-2 border-l-2 border-black",
@@ -916,23 +930,23 @@ function Resume() {
                   children: goal
                 }, void 0, false, {
                   fileName: _jsxFileName,
-                  lineNumber: 231,
+                  lineNumber: 246,
                   columnNumber: 23
                 }, this)
               }, index, false, {
                 fileName: _jsxFileName,
-                lineNumber: 227,
+                lineNumber: 242,
                 columnNumber: 21
               }, this);
             })
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 224,
+            lineNumber: 239,
             columnNumber: 15
           }, this)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 220,
+          lineNumber: 235,
           columnNumber: 13
         }, this)]
       }, void 0, true, {
@@ -1010,45 +1024,54 @@ __webpack_require__.r(__webpack_exports__);
 const roleDetails = [{
   index: 0,
   title: 'Lead UI Developer',
-  tagLine: 'Lead UI Developer with ' + getExperience() + '+ years experience',
+  tagLine: 'Lead UI Developer with ' + getExperience() + ' years experience',
   skills: ['JavaScript', 'Angular', 'React', 'NodeJS', 'SCSS', 'HTML', 'PHP', 'Python'],
   intro: 'Frontend developer with experience in building the pixel-perfect, beautiful, and robust user interface for products which is used by millions of people around the world every day.'
 }, {
   index: 1,
   title: 'Team Lead',
-  tagLine: 'Team Lead with ' + getExperience() + '+ years experience',
+  tagLine: 'Team Lead with ' + getExperience() + ' years experience',
   skills: ['Agile', 'Scrum', 'NodeJS', 'JavaScript', 'Angular', 'React', 'PHP', 'Python', 'CI/CD', 'UI/UX Design'],
   intro: 'Vast experience in managing a team with up to 15 team members. By believing in “Be the change you wish to see in the world.” – MKG, I always strive to lead as an example, this approach has helped me to build and nurture teams to perform with great efficiency'
 }, {
   index: 2,
   title: 'Full-Stack Developer',
-  tagLine: 'Full-Stack Developer with ' + getExperience() + '+ years experience',
+  tagLine: 'Full-Stack Developer with ' + getExperience() + ' years experience',
   skills: ['NodeJS', 'JavaScript', 'Angular', 'React', 'Python', 'PHP', 'CI/CD', 'REST/GRAPHQL', 'SQL/No SQL', 'UI/UX Design'],
   intro: 'Stitching kickass functionalities together and create world-class products is my passion. I love the logic and structure of coding, always look to write elegant and efficient code no matter which programming language it is.'
 }, {
   index: 3,
   title: 'Technical Project Manager',
-  tagLine: 'Technical Project Manager with ' + getExperience() + '+ years experience',
-  skills: ['Agile', 'Scrum', 'Lean', 'PMI ACP', 'Resource Management', 'Risk Management', 'Delivery Management'],
-  intro: 'Professional focused on working with multi-functional teams and increase customer satisfaction through the process. Proven experience in shipping world-class products on time.'
+  tagLine: 'Technical Project Manager with ' + getExperience() + ' years experience',
+  skills: ['Agile', 'Scrum', 'NodeJS', 'JavaScript', 'Angular', 'React', 'Python', 'UI/UX Design', 'Resource Management', 'Release Management'],
+  intro: 'As a manager I am focus on building multi-functional efficient teams and increase customer satisfaction through the process. People who know me say I am "Jack of all trades". However, I feel I know only enough to find, analyze and comprehend things that I do not know.'
 }, {
   index: 4,
   title: 'Tech Consultant',
-  tagLine: 'Tech Consultant with ' + getExperience() + '+ years experience',
+  tagLine: 'Tech Consultant with ' + getExperience() + ' years experience',
   skills: ['Project Management', 'Product Management', 'UI/UX Design', 'Node', 'Python', 'PHP', 'React', 'Angular', 'JavaScript', 'Agile', 'DevOps'],
   intro: 'People who know me say I am "Jack of all trades". However, I feel I know only enough to find, analyze and comprehend things that I do not know. I enjoy taking complex problems and find simple but beautiful solutions for them. Proven experience in guiding tech products to perform to their best.'
 }, {
   index: 5,
   title: 'Freelancer',
-  tagLine: 'Tech Consultant with ' + (3 + getExperience()) + '+ years experience',
+  tagLine: 'Tech Consultant with ' + (3 + getExperience()) + ' years experience',
   skills: ['Project Management', 'Product Management', 'UI/UX Design', 'Node', 'Python', 'PHP', 'React', 'Angular', 'JavaScript', 'Agile', 'DevOps'],
   freelance: true,
   intro: 'People who know me say I am "Jack of all trades". However, I feel I know only enough to find, analyze and comprehend things that I do not know. I enjoy taking complex problems and find simple but beautiful solutions for them. Proven experience in guiding tech products to perform to their best.'
 }];
 const workExperience = [{
-  title: 'Lead UI Developer',
+  title: 'Technical Project Manager',
   company: 'Reckonsys Tech Labs Pvt Ltd',
-  period: ' Mar 2017 - Present',
+  period: ' Mar 2022 - Present',
+  roles: [{
+    title: 'Technical Project Manager',
+    company: 'Reckonsys Tech Labs Pvt Ltd',
+    period: ' Mar 2022 - Present'
+  }, {
+    title: 'Lead UI Developer',
+    company: 'Reckonsys Tech Labs Pvt Ltd',
+    period: ' Mar 2017 - Mar 2022'
+  }],
   contributions: ['Oversee team responsible for design, development & deployment of SaaS platforms.', 'Design UI architecture to develop optimized frontend code.', 'Collaborate with client to design UX and develop intriguing  UI interfaces.', 'Motivate, encourage the team to deliver lean and robust applications on time.', 'Deliver applications to clients under a given time frame and help them to gain more familiarity with the system.'],
   projects: 'Lenovo Vantage, TransportSimple, Vndly, Kredily, IT People',
   projectDetails: [{
@@ -1107,10 +1130,15 @@ const eductation = [{
 }];
 const achivements = ['Have visited all 4 corners of the country on a motorcycle.', 'Teach under-privileged kids computer basics every year.', 'Financially Aid education of 2 kids every year.', 'Represent District, School, College in various sports, competition and won prices.', 'Appreciation certificates while working as a software developer.'];
 function getExperience() {
-  const startDate = moment__WEBPACK_IMPORTED_MODULE_0___default()(['2014-01-06']);
+  const startDate = moment__WEBPACK_IMPORTED_MODULE_0___default()();
+  startDate.year(2014);
+  startDate.month(0);
+  startDate.date(6);
   const today = moment__WEBPACK_IMPORTED_MODULE_0___default()();
   const years = today.diff(startDate, 'year');
-  return years;
+  const months = today.diff(startDate, 'month');
+  const extraMonths = months % 12;
+  return extraMonths > 0 ? years + months % 12 / 10 : years;
 }
 
 /***/ }),
