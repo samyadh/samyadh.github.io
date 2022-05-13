@@ -12,7 +12,7 @@ export const roleDetails = [
   {
     index: 0,
     title: 'Lead UI Developer',
-    tagLine: 'Lead UI Developer with ' + getExperience() + '+ years experience',
+    tagLine: 'Lead UI Developer with ' + getExperience() + ' years experience',
     skills: [
       'JavaScript',
       'Angular',
@@ -29,7 +29,7 @@ export const roleDetails = [
   {
     index: 1,
     title: 'Team Lead',
-    tagLine: 'Team Lead with ' + getExperience() + '+ years experience',
+    tagLine: 'Team Lead with ' + getExperience() + ' years experience',
     skills: [
       'Agile',
       'Scrum',
@@ -49,7 +49,7 @@ export const roleDetails = [
     index: 2,
     title: 'Full-Stack Developer',
     tagLine:
-      'Full-Stack Developer with ' + getExperience() + '+ years experience',
+      'Full-Stack Developer with ' + getExperience() + ' years experience',
     skills: [
       'NodeJS',
       'JavaScript',
@@ -69,25 +69,26 @@ export const roleDetails = [
     index: 3,
     title: 'Technical Project Manager',
     tagLine:
-      'Technical Project Manager with ' +
-      getExperience() +
-      '+ years experience',
+      'Technical Project Manager with ' + getExperience() + ' years experience',
     skills: [
       'Agile',
       'Scrum',
-      'Lean',
-      'PMI ACP',
+      'NodeJS',
+      'JavaScript',
+      'Angular',
+      'React',
+      'Python',
+      'UI/UX Design',
       'Resource Management',
-      'Risk Management',
-      'Delivery Management',
+      'Release Management',
     ],
     intro:
-      'Professional focused on working with multi-functional teams and increase customer satisfaction through the process. Proven experience in shipping world-class products on time.',
+      'As a manager I am focus on building multi-functional efficient teams and increase customer satisfaction through the process. People who know me say I am "Jack of all trades". However, I feel I know only enough to find, analyze and comprehend things that I do not know.',
   },
   {
     index: 4,
     title: 'Tech Consultant',
-    tagLine: 'Tech Consultant with ' + getExperience() + '+ years experience',
+    tagLine: 'Tech Consultant with ' + getExperience() + ' years experience',
     skills: [
       'Project Management',
       'Product Management',
@@ -108,7 +109,7 @@ export const roleDetails = [
     index: 5,
     title: 'Freelancer',
     tagLine:
-      'Tech Consultant with ' + (3 + getExperience()) + '+ years experience',
+      'Tech Consultant with ' + (3 + getExperience()) + ' years experience',
     skills: [
       'Project Management',
       'Product Management',
@@ -130,9 +131,21 @@ export const roleDetails = [
 
 export const workExperience = [
   {
-    title: 'Lead UI Developer',
+    title: 'Technical Project Manager',
     company: 'Reckonsys Tech Labs Pvt Ltd',
-    period: ' Mar 2017 - Present',
+    period: ' Mar 2022 - Present',
+    roles: [
+      {
+        title: 'Technical Project Manager',
+        company: 'Reckonsys Tech Labs Pvt Ltd',
+        period: ' Mar 2022 - Present',
+      },
+      {
+        title: 'Lead UI Developer',
+        company: 'Reckonsys Tech Labs Pvt Ltd',
+        period: ' Mar 2017 - Mar 2022',
+      },
+    ],
     contributions: [
       'Oversee team responsible for design, development & deployment of SaaS platforms.',
       'Design UI architecture to develop optimized frontend code.',
@@ -243,8 +256,13 @@ export const achivements = [
 ];
 
 export function getExperience() {
-  const startDate = moment(['2014-01-06']);
+  const startDate = moment();
+  startDate.year(2014);
+  startDate.month(0);
+  startDate.date(6);
   const today = moment();
   const years = today.diff(startDate, 'year');
-  return years;
+  const months = today.diff(startDate, 'month');
+  const extraMonths = months % 12;
+  return extraMonths > 0 ? years + (months % 12) / 10 : years;
 }

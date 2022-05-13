@@ -137,14 +137,29 @@ export function Resume() {
                     key={index}
                     className="relative pt-2 before:border-t-2 before:border-black before:content-center before:absolute before:left-[-28px] before:top-[22px] before:w-[14px]"
                   >
-                    <h3 className="text-sm font-bold">
-                      {work.title + ' '}
-                      {!roleDetails[role.index].freelance && (
-                        <span className="text-sm italic font-normal">
-                          at {work.company}, {work.period}
-                        </span>
-                      )}
-                    </h3>
+                    {work.roles ? (
+                      work.roles.map((mrole, mIndex) => (
+                        <h3 className="text-sm font-bold">
+                          {mrole.title + ' '}
+                          {!roleDetails[role.index].freelance && (
+                            <span className="text-sm italic font-normal">
+                              {mIndex === 0
+                                ? `at ${mrole.company}, ${mrole.period}`
+                                : `from ${mrole.period}`}
+                            </span>
+                          )}
+                        </h3>
+                      ))
+                    ) : (
+                      <h3 className="text-sm font-bold">
+                        {work.title + ' '}
+                        {!roleDetails[role.index].freelance && (
+                          <span className="text-sm italic font-normal">
+                            at {work.company}, {work.period}
+                          </span>
+                        )}
+                      </h3>
+                    )}
                     <div>
                       {work.projectDetails && (
                         <ul className="mb-1">
