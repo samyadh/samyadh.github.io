@@ -11,8 +11,9 @@ export interface IProject {
 export const roleDetails = [
   {
     index: 0,
-    title: 'Lead UI Developer',
-    tagLine: 'Lead UI Developer with ' + getExperience() + ' years experience',
+    title: 'Lead Software Engineer',
+    tagLine:
+      'Lead Software Engineer with ' + getExperience() + ' years experience',
     skills: [
       'JavaScript',
       'Angular',
@@ -24,7 +25,7 @@ export const roleDetails = [
       'Python',
     ],
     intro:
-      'Frontend developer with experience in building the pixel-perfect, beautiful, and robust user interface for products which is used by millions of people around the world every day.',
+      'Lead Software Engineer with experience in building the pixel-perfect, beautiful, and robust user interface for products which is used by millions of people around the world every day.',
   },
   {
     index: 1,
@@ -131,18 +132,49 @@ export const roleDetails = [
 
 export const workExperience = [
   {
+    title: 'Lead Software Engineer',
+    company: 'Practo Technologies Private Limited',
+    period: ' Jun 2022 - Present',
+    roles: [
+      {
+        title: 'Lead Software Engineer',
+        company: 'Practo Technologies Private Limited',
+        period: ' Jun 2022 - Present',
+      },
+    ],
+    contributions: [
+      'Contributions to overall product roadmap, increase engagement with by optimizing User Experience.',
+      'Design process for various development activites and educate it to team.',
+      'Produce high quality code and mentor team members to achive better coding standards.',
+      'Help team members in personal goals and Managers to meet their targets.',
+    ],
+    projects: 'Practo Care Surgeries, Ray',
+    projectDetails: [
+      {
+        title: 'Practo.com',
+        company: 'Practo',
+        role: 'Lead Software Engineer',
+        techUsed: 'React, TypeScript, Node, GraphQL',
+        description:
+          'Practo is an aggregator to connect with India’s top doctors via video consultation, get digital prescriptions, order medicines, book doctor appointments & lab tests. It serves 300 Million users every year and help 100k Doctors around 20+ Countries to offer services directly from phone',
+        contributions:
+          'I lead a bunch of UI experts to manage, mentor, motivate them.',
+      },
+    ],
+  },
+  {
     title: 'Technical Project Manager',
-    company: 'Reckonsys Tech Labs Pvt Ltd',
+    company: 'Reckonsys Tech Labs Private Limited',
     period: ' Mar 2022 - Present',
     roles: [
       {
         title: 'Technical Project Manager',
-        company: 'Reckonsys Tech Labs Pvt Ltd',
-        period: ' Mar 2022 - Present',
+        company: 'Reckonsys Tech Labs Private Limited',
+        period: ' Mar 2022 - Jun 2022',
       },
       {
         title: 'Lead UI Developer',
-        company: 'Reckonsys Tech Labs Pvt Ltd',
+        company: 'Reckonsys Tech Labs Private Limited',
         period: ' Mar 2017 - Mar 2022',
       },
     ],
@@ -153,33 +185,34 @@ export const workExperience = [
       'Motivate, encourage the team to deliver lean and robust applications on time.',
       'Deliver applications to clients under a given time frame and help them to gain more familiarity with the system.',
     ],
-    projects: 'Lenovo Vantage, TransportSimple, Vndly, Kredily, IT People',
-    projectDetails: [
-      {
-        title: 'Trust Your Supplier',
-        company: 'Chainyard',
-        role: 'Team Lead',
-        techUsed: 'React, TypeScript, MongoDb, Node',
-        description:
-          'Trust Your Supplier is the window to the information you need for centralized planning & supplier oversight',
-        contributions:
-          'i am helping the team in creating some of the beautiful and snappy user interfaces, also build the Services, librarys used across multiple platforms offered. Create / Integrate services that interacted with various service providers. Suggest and create POCs, also manage a team of 5 developers.',
-      },
-      {
-        title: 'Lenovo LanSchool',
-        company: 'Lenovo Software',
-        role: 'Individual Contributor',
-        techUsed: 'Angular 12, Nx, Nightwatch, NodeJS, Jenkins',
-        description:
-          'LanSchool is a Classroom Management & Guidance Web Platform. Some of the features are Communication and Screen Sharing, Limit web, Blank screen, Thumbnail monitoring, Messaging, Etc',
-        contributions:
-          'I was involved in building microservices and reusable components, libraries for the platform using TDD. Also, work with UX designers to optimize user interactions. In addition to them, I work on various POCs for the platform and constantly mentoring juniors.',
-      },
-    ],
+    projects:
+      'Trust Your Supplier, Lenovo LanSchool, Lenovo Vantage, TransportSimple, Vndly, Kredily, IT People',
+    // projectDetails: [
+    //   {
+    //     title: 'Trust Your Supplier',
+    //     company: 'Chainyard',
+    //     role: 'Team Lead',
+    //     techUsed: 'React, TypeScript, MongoDb, Node',
+    //     description:
+    //       'Trust Your Supplier is the window to the information you need for centralized planning & supplier oversight',
+    //     contributions:
+    //       'i am helping the team in creating some of the beautiful and snappy user interfaces, also build the Services, librarys used across multiple platforms offered. Create / Integrate services that interacted with various service providers. Suggest and create POCs, also manage a team of 5 developers.',
+    //   },
+    //   {
+    //     title: 'Lenovo LanSchool',
+    //     company: 'Lenovo Software',
+    //     role: 'Individual Contributor',
+    //     techUsed: 'Angular 12, Nx, Nightwatch, NodeJS, Jenkins',
+    //     description:
+    //       'LanSchool is a Classroom Management & Guidance Web Platform. Some of the features are Communication and Screen Sharing, Limit web, Blank screen, Thumbnail monitoring, Messaging, Etc',
+    //     contributions:
+    //       'I was involved in building microservices and reusable components, libraries for the platform using TDD. Also, work with UX designers to optimize user interactions. In addition to them, I work on various POCs for the platform and constantly mentoring juniors.',
+    //   },
+    // ],
   },
   {
     title: 'Senior Software Engineer',
-    company: 'HyHop Mobility Technologies Pvt Ltd',
+    company: 'HyHop Mobility Technologies Private Limited',
     period: 'Aug 2016 - Feb 2017',
     contributions: [
       'Manage design, development & deployment of HyHop Cabs App, Websites.',
@@ -193,7 +226,7 @@ export const workExperience = [
   },
   {
     title: 'Software Engineer',
-    company: 'Ness Technologies Pvt Ltd',
+    company: 'Ness Technologies Private Limited',
     period: 'Jan 2015 – Jul 2016',
     contributions: [
       'Create & implement methods to increase the efficiency and productivity of the consumer marketing email delivery team.',
@@ -206,7 +239,7 @@ export const workExperience = [
   },
   {
     title: 'PHP Developer',
-    company: 'Rossitek Software Solutions Pvt Ltd',
+    company: 'Rossitek Software Solutions Private Limited',
     period: 'Jan 2014 - Dec 2014',
     contributions: [
       'Interact with clients across the world to understand requirements and develop web and app systems.',
