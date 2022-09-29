@@ -521,7 +521,7 @@ function Resume() {
         children: "Export Settings"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 21,
+        lineNumber: 22,
         columnNumber: 9
       }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("div", {
         className: "flex",
@@ -532,7 +532,7 @@ function Resume() {
             children: "Role"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 24,
+            lineNumber: 25,
             columnNumber: 13
           }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("select", {
             className: "text-xs border border-black cursor-pointer",
@@ -551,18 +551,18 @@ function Resume() {
                 children: role.title
               }, index, false, {
                 fileName: _jsxFileName,
-                lineNumber: 39,
+                lineNumber: 40,
                 columnNumber: 19
               }, this);
             })
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 25,
+            lineNumber: 26,
             columnNumber: 13
           }, this)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 23,
+          lineNumber: 24,
           columnNumber: 11
         }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("div", {
           className: "py-1 ml-2",
@@ -571,7 +571,7 @@ function Resume() {
             children: "Skills"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 47,
+            lineNumber: 48,
             columnNumber: 13
           }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("input", {
             type: "text",
@@ -579,12 +579,12 @@ function Resume() {
             onBlur: addSkill
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 48,
+            lineNumber: 49,
             columnNumber: 13
           }, this)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 46,
+          lineNumber: 47,
           columnNumber: 11
         }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("div", {
           className: "ml-2",
@@ -597,22 +597,22 @@ function Resume() {
             children: "Export"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 55,
+            lineNumber: 56,
             columnNumber: 13
           }, this)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 54,
+          lineNumber: 55,
           columnNumber: 11
         }, this)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 22,
+        lineNumber: 23,
         columnNumber: 9
       }, this)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 20,
+      lineNumber: 21,
       columnNumber: 7
     }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("div", {
       className: "w-[1180px] h-[1668px] m-auto box-border border-2 p-12 flex flex-col relative overflow-hidden",
@@ -625,18 +625,18 @@ function Resume() {
               children: skill
             }, key, false, {
               fileName: _jsxFileName,
-              lineNumber: 72,
+              lineNumber: 73,
               columnNumber: 17
             }, this);
           })
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 69,
+          lineNumber: 70,
           columnNumber: 11
         }, this)
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 68,
+        lineNumber: 69,
         columnNumber: 9
       }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("div", {
         className: "z-10",
@@ -648,14 +648,14 @@ function Resume() {
               children: "Samyadh Jain"
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 82,
+              lineNumber: 83,
               columnNumber: 15
             }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("h1", {
               className: "mr-1 text-sm font-bold",
               children: _models_role_details__WEBPACK_IMPORTED_MODULE_1__["roleDetails"][role.index].tagLine
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 83,
+              lineNumber: 84,
               columnNumber: 15
             }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("ul", {
               className: "mb-1",
@@ -665,23 +665,33 @@ function Resume() {
                   children: skill
                 }, key, false, {
                   fileName: _jsxFileName,
-                  lineNumber: 89,
+                  lineNumber: 90,
                   columnNumber: 21
                 }, this);
               })
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 86,
+              lineNumber: 87,
               columnNumber: 15
             }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("a", {
               className: "inline-block px-2 py-1 mr-1 text-xs bg-gray-200 rounded",
-              href: "tel:+919739221385",
+              href: "tel:+15197311983",
               target: "_blank",
               rel: "noreferrer",
-              children: "+91 9739221385"
+              children: "(519) 731 1983"
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 98,
+              lineNumber: 99,
+              columnNumber: 15
+            }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("a", {
+              className: "inline-block px-2 py-1 mr-1 text-xs bg-gray-200 rounded",
+              href: "https://www.google.com/maps/place/7+Foot+Crescent,+Cambridge,+ON+N1R+8M5/@43.3888871,-80.3103819,17z/data=!3m1!4b1!4m5!3m4!1s0x882b882532470b69:0x232f15d014c3571a!8m2!3d43.3888832!4d-80.3081879",
+              target: "_blank",
+              rel: "noreferrer",
+              children: "7 Foot Crescent, Cambridge, ON"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 107,
               columnNumber: 15
             }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("a", {
               className: "inline-block px-2 py-1 mr-1 text-xs bg-gray-200 rounded",
@@ -691,7 +701,7 @@ function Resume() {
               children: "samyadh.jain@gmail.com"
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 106,
+              lineNumber: 115,
               columnNumber: 15
             }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("a", {
               className: "inline-block px-2 py-1 mr-1 text-xs bg-gray-200 rounded",
@@ -701,23 +711,23 @@ function Resume() {
               children: "https://samyadh.github.io"
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 114,
+              lineNumber: 123,
               columnNumber: 15
             }, this)]
           }, void 0, true, {
             fileName: _jsxFileName,
-            lineNumber: 81,
+            lineNumber: 82,
             columnNumber: 13
           }, this)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 80,
+          lineNumber: 81,
           columnNumber: 11
         }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("div", {
           className: "h-[2px] bg-black mb-2 mt-4"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 124,
+          lineNumber: 133,
           columnNumber: 11
         }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("div", {
           className: "intro",
@@ -725,12 +735,12 @@ function Resume() {
             children: _models_role_details__WEBPACK_IMPORTED_MODULE_1__["roleDetails"][role.index].intro
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 126,
+            lineNumber: 135,
             columnNumber: 13
           }, this)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 125,
+          lineNumber: 134,
           columnNumber: 11
         }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("div", {
           children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("h4", {
@@ -738,7 +748,7 @@ function Resume() {
             children: "Work Experience"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 129,
+            lineNumber: 138,
             columnNumber: 13
           }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("ul", {
             className: "pl-4 ml-2 border-l-2 border-black",
@@ -754,12 +764,12 @@ function Resume() {
                     children: mIndex === 0 ? `at ${mrole.company}, ${mrole.period}` : `from ${mrole.period}`
                   }, void 0, false, {
                     fileName: _jsxFileName,
-                    lineNumber: 145,
+                    lineNumber: 154,
                     columnNumber: 29
                   }, this)]
                 }, void 0, true, {
                   fileName: _jsxFileName,
-                  lineNumber: 142,
+                  lineNumber: 151,
                   columnNumber: 25
                 }, this)) : /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("h3", {
                   className: "text-sm font-bold",
@@ -768,12 +778,12 @@ function Resume() {
                     children: ["at ", work.company, ", ", work.period]
                   }, void 0, true, {
                     fileName: _jsxFileName,
-                    lineNumber: 157,
+                    lineNumber: 166,
                     columnNumber: 27
                   }, this)]
                 }, void 0, true, {
                   fileName: _jsxFileName,
-                  lineNumber: 154,
+                  lineNumber: 163,
                   columnNumber: 23
                 }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("div", {
                   children: [work.projectDetails && /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("ul", {
@@ -788,42 +798,42 @@ function Resume() {
                             children: project.techUsed
                           }, void 0, false, {
                             fileName: _jsxFileName,
-                            lineNumber: 175,
+                            lineNumber: 184,
                             columnNumber: 37
                           }, this)]
                         }, void 0, true, {
                           fileName: _jsxFileName,
-                          lineNumber: 173,
+                          lineNumber: 182,
                           columnNumber: 35
                         }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("p", {
                           className: "text-sm italic",
                           children: [project.description, ",", ' ', project.contributions]
                         }, void 0, true, {
                           fileName: _jsxFileName,
-                          lineNumber: 179,
+                          lineNumber: 188,
                           columnNumber: 35
                         }, this)]
                       }, index, true, {
                         fileName: _jsxFileName,
-                        lineNumber: 169,
+                        lineNumber: 178,
                         columnNumber: 33
                       }, this);
                     })
                   }, void 0, false, {
                     fileName: _jsxFileName,
-                    lineNumber: 165,
+                    lineNumber: 174,
                     columnNumber: 25
                   }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("h4", {
                     className: "text-sm font-bold",
                     children: work.projects
                   }, void 0, false, {
                     fileName: _jsxFileName,
-                    lineNumber: 189,
+                    lineNumber: 198,
                     columnNumber: 23
                   }, this)]
                 }, void 0, true, {
                   fileName: _jsxFileName,
-                  lineNumber: 163,
+                  lineNumber: 172,
                   columnNumber: 21
                 }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("div", {
                   children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("ul", {
@@ -834,34 +844,34 @@ function Resume() {
                         children: task
                       }, index, false, {
                         fileName: _jsxFileName,
-                        lineNumber: 195,
+                        lineNumber: 204,
                         columnNumber: 29
                       }, this);
                     })
                   }, void 0, false, {
                     fileName: _jsxFileName,
-                    lineNumber: 192,
+                    lineNumber: 201,
                     columnNumber: 23
                   }, this)
                 }, void 0, false, {
                   fileName: _jsxFileName,
-                  lineNumber: 191,
+                  lineNumber: 200,
                   columnNumber: 21
                 }, this)]
               }, index, true, {
                 fileName: _jsxFileName,
-                lineNumber: 136,
+                lineNumber: 145,
                 columnNumber: 19
               }, this) : '';
             })
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 132,
+            lineNumber: 141,
             columnNumber: 13
           }, this)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 128,
+          lineNumber: 137,
           columnNumber: 11
         }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("div", {
           children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("h4", {
@@ -869,7 +879,7 @@ function Resume() {
             children: "Education"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 210,
+            lineNumber: 219,
             columnNumber: 13
           }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("ul", {
             children: _models_role_details__WEBPACK_IMPORTED_MODULE_1__["eductation"].map((course, index) => {
@@ -882,47 +892,47 @@ function Resume() {
                     children: ["Aggregate ", course.percentage]
                   }, void 0, true, {
                     fileName: _jsxFileName,
-                    lineNumber: 222,
+                    lineNumber: 231,
                     columnNumber: 23
                   }, this)]
                 }, void 0, true, {
                   fileName: _jsxFileName,
-                  lineNumber: 220,
+                  lineNumber: 229,
                   columnNumber: 21
                 }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("h4", {
                   className: "text-sm",
                   children: [course.university, ", ", course.period]
                 }, void 0, true, {
                   fileName: _jsxFileName,
-                  lineNumber: 226,
+                  lineNumber: 235,
                   columnNumber: 21
                 }, this)]
               }, index, true, {
                 fileName: _jsxFileName,
-                lineNumber: 216,
+                lineNumber: 225,
                 columnNumber: 19
               }, this);
             })
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 213,
+            lineNumber: 222,
             columnNumber: 13
           }, this)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 209,
+          lineNumber: 218,
           columnNumber: 11
-        }, this), [0, 1, 2].includes(role.index) && /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("div", {
+        }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("div", {
           children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("h4", {
             className: "inline-block mt-2 font-bold border-b-2 border-black",
-            children: "Achivements"
+            children: "Availablity"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 236,
-            columnNumber: 15
+            lineNumber: 263,
+            columnNumber: 13
           }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("ul", {
             className: "pl-4 ml-2 border-l-2 border-black",
-            children: _models_role_details__WEBPACK_IMPORTED_MODULE_1__["achivements"].map((goal, index) => {
+            children: _models_role_details__WEBPACK_IMPORTED_MODULE_1__["availablity"].map((goal, index) => {
               return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("li", {
                 className: "relative pt-1 before:border-t-2 before:border-black before:content-center before:absolute before:left-[-28px] before:top-[16px] before:w-[14px]",
                 children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("h4", {
@@ -930,38 +940,38 @@ function Resume() {
                   children: goal
                 }, void 0, false, {
                   fileName: _jsxFileName,
-                  lineNumber: 246,
-                  columnNumber: 23
+                  lineNumber: 273,
+                  columnNumber: 21
                 }, this)
               }, index, false, {
                 fileName: _jsxFileName,
-                lineNumber: 242,
-                columnNumber: 21
+                lineNumber: 269,
+                columnNumber: 19
               }, this);
             })
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 239,
-            columnNumber: 15
+            lineNumber: 266,
+            columnNumber: 13
           }, this)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 235,
-          columnNumber: 13
+          lineNumber: 262,
+          columnNumber: 11
         }, this)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 79,
+        lineNumber: 80,
         columnNumber: 9
       }, this)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 67,
+      lineNumber: 68,
       columnNumber: 7
     }, this)]
   }, void 0, true, {
     fileName: _jsxFileName,
-    lineNumber: 19,
+    lineNumber: 20,
     columnNumber: 5
   }, this);
 }
@@ -1008,7 +1018,7 @@ react_dom__WEBPACK_IMPORTED_MODULE_1__["render"]( /*#__PURE__*/Object(react_jsx_
 /*!*********************************!*\
   !*** ./models/role-details.tsx ***!
   \*********************************/
-/*! exports provided: roleDetails, workExperience, eductation, achivements, getExperience */
+/*! exports provided: roleDetails, workExperience, eductation, achivements, availablity, getExperience */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1017,6 +1027,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "workExperience", function() { return workExperience; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "eductation", function() { return eductation; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "achivements", function() { return achivements; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "availablity", function() { return availablity; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getExperience", function() { return getExperience; });
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! moment */ "../../../node_modules/moment/moment.js");
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_0__);
@@ -1062,11 +1073,11 @@ const roleDetails = [{
 const workExperience = [{
   title: 'Lead Software Engineer',
   company: 'Practo Technologies Private Limited',
-  period: ' Jun 2022 - Present',
+  period: ' Jun 2022 - Aug 2022',
   roles: [{
     title: 'Lead Software Engineer',
     company: 'Practo Technologies Private Limited',
-    period: ' Jun 2022 - Present'
+    period: ' Jun 2022 - Aug 2022'
   }],
   contributions: ['Contributions to overall product roadmap, increase engagement with by optimizing User Experience.', 'Design process for various development activites and educate it to team.', 'Produce high quality code and mentor team members to achive better coding standards.', 'Help team members in personal goals and Managers to meet their targets.'],
   projects: 'Practo Care Surgeries, Ray',
@@ -1155,6 +1166,7 @@ const eductation = [{
   percentage: '64%'
 }];
 const achivements = ['Have visited all 4 corners of the country on a motorcycle.', 'Teach under-privileged kids computer basics every year.', 'Financially Aid education of 2 kids every year.', 'Represent District, School, College in various sports, competition and won prices.', 'Appreciation certificates while working as a software developer.'];
+const availablity = ['Monday, Friday, Saturday, Sunday - 24 Hours', 'Tuesday, Wednesday, Thursday - 14 Hours, 12AM to 2PM'];
 function getExperience() {
   const startDate = moment__WEBPACK_IMPORTED_MODULE_0___default()();
   startDate.year(2014);
