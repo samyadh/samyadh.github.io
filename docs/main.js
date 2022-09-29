@@ -688,7 +688,7 @@ function Resume() {
               href: "https://www.google.com/maps/place/7+Foot+Crescent,+Cambridge,+ON+N1R+8M5/@43.3888871,-80.3103819,17z/data=!3m1!4b1!4m5!3m4!1s0x882b882532470b69:0x232f15d014c3571a!8m2!3d43.3888832!4d-80.3081879",
               target: "_blank",
               rel: "noreferrer",
-              children: "7 Foot Crescent, Cambridge, ON"
+              children: "7 Foot Crescent, Cambridge, ON N1R 8M5"
             }, void 0, false, {
               fileName: _jsxFileName,
               lineNumber: 107,
@@ -1166,7 +1166,7 @@ const eductation = [{
   percentage: '64%'
 }];
 const achivements = ['Have visited all 4 corners of the country on a motorcycle.', 'Teach under-privileged kids computer basics every year.', 'Financially Aid education of 2 kids every year.', 'Represent District, School, College in various sports, competition and won prices.', 'Appreciation certificates while working as a software developer.'];
-const availablity = ['Monday, Friday, Saturday, Sunday - 24 Hours', 'Tuesday, Wednesday, Thursday - 14 Hours, 12AM to 2PM'];
+const availablity = ['Monday, Friday, Saturday, Sunday - 12AM to 11PM, 23 Hours', 'Tuesday, Wednesday, Thursday - 12AM to 2PM, 14 Hours'];
 function getExperience() {
   const startDate = moment__WEBPACK_IMPORTED_MODULE_0___default()();
   startDate.year(2014);

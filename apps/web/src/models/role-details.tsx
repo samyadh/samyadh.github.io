@@ -289,8 +289,8 @@ export const achivements = [
 ];
 
 export const availablity = [
-  'Monday, Friday, Saturday, Sunday - 24 Hours',
-  'Tuesday, Wednesday, Thursday - 14 Hours, 12AM to 2PM',
+  'Monday, Friday, Saturday, Sunday - 12AM to 11PM, 23 Hours',
+  'Tuesday, Wednesday, Thursday - 12AM to 2PM, 14 Hours',
 ];
 
 export function getExperience() {

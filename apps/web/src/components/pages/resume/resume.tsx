@@ -110,7 +110,7 @@ export function Resume() {
                 target="_blank"
                 rel="noreferrer"
               >
-                7 Foot Crescent, Cambridge, ON
+                7 Foot Crescent, Cambridge, ON N1R 8M5
               </a>
               <a
                 className="inline-block px-2 py-1 mr-1 text-xs bg-gray-200 rounded"
