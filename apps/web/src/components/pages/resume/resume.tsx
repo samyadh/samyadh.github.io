@@ -5,6 +5,7 @@ import {
   IProject,
   eductation,
   achivements,
+  availablity,
 } from '../../../models/role-details';
 
 export function Resume() {
@@ -97,11 +98,19 @@ export function Resume() {
               </ul>
               <a
                 className="inline-block px-2 py-1 mr-1 text-xs bg-gray-200 rounded"
-                href="tel:+919739221385"
+                href="tel:+15197311983"
                 target="_blank"
                 rel="noreferrer"
               >
-                +91 9739221385
+                (519) 731 1983
+              </a>
+              <a
+                className="inline-block px-2 py-1 mr-1 text-xs bg-gray-200 rounded"
+                href="https://www.google.com/maps/place/7+Foot+Crescent,+Cambridge,+ON+N1R+8M5/@43.3888871,-80.3103819,17z/data=!3m1!4b1!4m5!3m4!1s0x882b882532470b69:0x232f15d014c3571a!8m2!3d43.3888832!4d-80.3081879"
+                target="_blank"
+                rel="noreferrer"
+              >
+                7 Foot Crescent, Cambridge, ON
               </a>
               <a
                 className="inline-block px-2 py-1 mr-1 text-xs bg-gray-200 rounded"
@@ -231,7 +240,7 @@ export function Resume() {
               })}
             </ul>
           </div>
-          {[0, 1, 2].includes(role.index) && (
+          {/* {[0, 1, 2].includes(role.index) && (
             <div>
               <h4 className="inline-block mt-2 font-bold border-b-2 border-black">
                 Achivements
@@ -249,7 +258,24 @@ export function Resume() {
                 })}
               </ul>
             </div>
-          )}
+          )} */}
+          <div>
+            <h4 className="inline-block mt-2 font-bold border-b-2 border-black">
+              Availablity
+            </h4>
+            <ul className="pl-4 ml-2 border-l-2 border-black">
+              {availablity.map((goal, index) => {
+                return (
+                  <li
+                    key={index}
+                    className="relative pt-1 before:border-t-2 before:border-black before:content-center before:absolute before:left-[-28px] before:top-[16px] before:w-[14px]"
+                  >
+                    <h4 className="text-sm">{goal}</h4>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
         </div>
       </div>
     </div>

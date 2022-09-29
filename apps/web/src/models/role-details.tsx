@@ -134,12 +134,12 @@ export const workExperience = [
   {
     title: 'Lead Software Engineer',
     company: 'Practo Technologies Private Limited',
-    period: ' Jun 2022 - Present',
+    period: ' Jun 2022 - Aug 2022',
     roles: [
       {
         title: 'Lead Software Engineer',
         company: 'Practo Technologies Private Limited',
-        period: ' Jun 2022 - Present',
+        period: ' Jun 2022 - Aug 2022',
       },
     ],
     contributions: [
@@ -286,6 +286,11 @@ export const achivements = [
   'Financially Aid education of 2 kids every year.',
   'Represent District, School, College in various sports, competition and won prices.',
   'Appreciation certificates while working as a software developer.',
+];
+
+export const availablity = [
+  'Monday, Friday, Saturday, Sunday - 24 Hours',
+  'Tuesday, Wednesday, Thursday - 14 Hours, 12AM to 2PM',
 ];
 
 export function getExperience() {
