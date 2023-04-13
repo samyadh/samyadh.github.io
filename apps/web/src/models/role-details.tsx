@@ -23,14 +23,19 @@ export const roleDetails = [
       'HTML',
       'PHP',
       'Python',
+      'Agile',
+      'Scrum',
+      'CI/CD',
+      'UI/UX Design',
     ],
     intro:
-      'Lead Software Engineer with experience in building the pixel-perfect, beautiful, and robust user interface for products which is used by millions of people around the world every day.',
+      'Stitching world-class functionalities together and create world-class products is my passion. I love the logic and structure of coding, always look to write elegant and efficient code no matter which programming language it is.',
   },
   {
     index: 1,
-    title: 'Team Lead',
-    tagLine: 'Team Lead with ' + getExperience() + ' years experience',
+    title: 'Tech Lead',
+    tagLine:
+      'Lead Software Engineer with ' + getExperience() + ' years experience',
     skills: [
       'Agile',
       'Scrum',
@@ -64,7 +69,7 @@ export const roleDetails = [
       'UI/UX Design',
     ],
     intro:
-      'Stitching kickass functionalities together and create world-class products is my passion. I love the logic and structure of coding, always look to write elegant and efficient code no matter which programming language it is.',
+      'Stitching world-class functionalities together and create world-class products is my passion. I love the logic and structure of coding, always look to write elegant and efficient code no matter which programming language it is.',
   },
   {
     index: 3,
@@ -132,6 +137,64 @@ export const roleDetails = [
 
 export const workExperience = [
   {
+    title: 'Technical Project Manager',
+    company: 'Reckonsys Tech Labs Private Limited',
+    period: ' Nov 2022 - Present',
+    roles: [
+      {
+        title: 'Technical Project Manager',
+        company: 'Reckonsys Tech Labs Private Limited',
+        period: ' Nov 2022 - Present',
+      },
+      {
+        title: 'Lead UI Developer',
+        company: 'Reckonsys Tech Labs Private Limited',
+        period: ' Mar 2017 - Mar 2022',
+      },
+    ],
+    contributions: [
+      'Oversee team responsible for design, development & deployment of SaaS platforms.',
+      'Design UI architecture to develop optimized frontend code.',
+      'Collaborate with client to design UX and develop intriguing  UI interfaces.',
+      'Motivate, encourage the team to deliver lean and robust applications on time.',
+      'Deliver applications to clients under a given time frame and help them to gain more familiarity with the system.',
+    ],
+    projects:
+      'Trust Your Supplier, Lenovo LanSchool, Lenovo Vantage, TransportSimple, Vndly, Kredily, IT People',
+    projectDetails: [
+      // {
+      //   title: 'Trust Your Supplier',
+      //   company: 'Chainyard',
+      //   role: 'Team Lead',
+      //   techUsed: 'React, TypeScript, MongoDb, Node',
+      //   description:
+      //     'Trust Your Supplier is the window to the information you need for centralized planning & supplier oversight',
+      //   contributions:
+      //     'i am helping the team in creating some of the beautiful and snappy user interfaces, also build the Services, librarys used across multiple platforms offered. Create / Integrate services that interacted with various service providers. Suggest and create POCs, also manage a team of 5 developers.',
+      // },
+      {
+        title: 'CNote',
+        company: 'CNote',
+        role: 'Team Lead',
+        techUsed: 'React, TypeScript, MySql, Node',
+        description:
+          'CNote created technology to streamline community-centered impact investing at scale. Further Racial Equity and Social Justice by investing with CNote.',
+        contributions:
+          'i am helping the team in creating some of the beautiful and snappy user interfaces, also build the Services, librarys used across multiple platforms offered. Create / Integrate services that interacted with various service providers. Suggest and create POCs, also manage a team of 2 developers.',
+      },
+      {
+        title: 'Lenovo LanSchool',
+        company: 'Lenovo Software',
+        role: 'Individual Contributor',
+        techUsed: 'Angular 12, Nx, Nightwatch, NodeJS, Jenkins',
+        description:
+          'LanSchool is a Classroom Management & Guidance Web Platform. Some of the features are Communication and Screen Sharing, Limit web, Blank screen, Thumbnail monitoring, Messaging, Etc',
+        contributions:
+          'I was involved in building microservices and reusable components, libraries for the platform using TDD. Also, work with UX designers to optimize user interactions. In addition to them, I work on various POCs for the platform and constantly mentoring juniors.',
+      },
+    ],
+  },
+  {
     title: 'Lead Software Engineer',
     company: 'Practo Technologies Private Limited',
     period: ' Jun 2022 - Aug 2022',
@@ -150,66 +213,19 @@ export const workExperience = [
     ],
     projects: 'Practo Care Surgeries, Ray',
     projectDetails: [
-      {
-        title: 'Practo.com',
-        company: 'Practo',
-        role: 'Lead Software Engineer',
-        techUsed: 'React, TypeScript, Node, GraphQL',
-        description:
-          'Practo is an aggregator to connect with India’s top doctors via video consultation, get digital prescriptions, order medicines, book doctor appointments & lab tests. It serves 300 Million users every year and help 100k Doctors around 20+ Countries to offer services directly from phone',
-        contributions:
-          'I lead a bunch of UI experts to manage, mentor, motivate them.',
-      },
+      // {
+      //   title: 'Practo.com',
+      //   company: 'Practo',
+      //   role: 'Lead Software Engineer',
+      //   techUsed: 'React, TypeScript, Node, GraphQL',
+      //   description:
+      //     'Practo is an aggregator to connect with India’s top doctors via video consultation, get digital prescriptions, order medicines, book doctor appointments & lab tests. It serves 300 Million users every year and help 100k Doctors around 20+ Countries to offer services directly from phone',
+      //   contributions:
+      //     'I lead a bunch of UI experts to manage, mentor, motivate them.',
+      // },
     ],
   },
-  {
-    title: 'Technical Project Manager',
-    company: 'Reckonsys Tech Labs Private Limited',
-    period: ' Mar 2022 - Present',
-    roles: [
-      {
-        title: 'Technical Project Manager',
-        company: 'Reckonsys Tech Labs Private Limited',
-        period: ' Mar 2022 - Jun 2022',
-      },
-      {
-        title: 'Lead UI Developer',
-        company: 'Reckonsys Tech Labs Private Limited',
-        period: ' Mar 2017 - Mar 2022',
-      },
-    ],
-    contributions: [
-      'Oversee team responsible for design, development & deployment of SaaS platforms.',
-      'Design UI architecture to develop optimized frontend code.',
-      'Collaborate with client to design UX and develop intriguing  UI interfaces.',
-      'Motivate, encourage the team to deliver lean and robust applications on time.',
-      'Deliver applications to clients under a given time frame and help them to gain more familiarity with the system.',
-    ],
-    projects:
-      'Trust Your Supplier, Lenovo LanSchool, Lenovo Vantage, TransportSimple, Vndly, Kredily, IT People',
-    // projectDetails: [
-    //   {
-    //     title: 'Trust Your Supplier',
-    //     company: 'Chainyard',
-    //     role: 'Team Lead',
-    //     techUsed: 'React, TypeScript, MongoDb, Node',
-    //     description:
-    //       'Trust Your Supplier is the window to the information you need for centralized planning & supplier oversight',
-    //     contributions:
-    //       'i am helping the team in creating some of the beautiful and snappy user interfaces, also build the Services, librarys used across multiple platforms offered. Create / Integrate services that interacted with various service providers. Suggest and create POCs, also manage a team of 5 developers.',
-    //   },
-    //   {
-    //     title: 'Lenovo LanSchool',
-    //     company: 'Lenovo Software',
-    //     role: 'Individual Contributor',
-    //     techUsed: 'Angular 12, Nx, Nightwatch, NodeJS, Jenkins',
-    //     description:
-    //       'LanSchool is a Classroom Management & Guidance Web Platform. Some of the features are Communication and Screen Sharing, Limit web, Blank screen, Thumbnail monitoring, Messaging, Etc',
-    //     contributions:
-    //       'I was involved in building microservices and reusable components, libraries for the platform using TDD. Also, work with UX designers to optimize user interactions. In addition to them, I work on various POCs for the platform and constantly mentoring juniors.',
-    //   },
-    // ],
-  },
+
   {
     title: 'Senior Software Engineer',
     company: 'HyHop Mobility Technologies Private Limited',
@@ -250,7 +266,7 @@ export const workExperience = [
       'FDSee, Sivance, Soon Seng Huat, Ficep Approved, APESB, Book Kingdom, Mavego',
   },
   {
-    hidden: [0, 1, 2],
+    hidden: [0, 1, 2, 3],
     title: 'Tech Consultant',
     company: 'Freelance',
     period: 'Oct 2012 - Aug 2015',
@@ -264,6 +280,13 @@ export const workExperience = [
 ];
 
 export const eductation = [
+  {
+    title: 'Project Management',
+    university: 'Ontario Graduation Certificate',
+    college: 'Conestoga College, Doon, Kitchner, ON',
+    period: 'Sep 2022 – Apr 2023',
+    percentage: '78%',
+  },
   {
     title: "Master's in Computer Application",
     university: 'Visvesvaraya Technological University',

@@ -97,15 +97,15 @@ export function Resume() {
                 })}
               </ul>
               <a
-                className="inline-block px-2 py-1 mr-1 text-xs bg-gray-200 rounded"
+                className="inline-block px-2 py-1 mr-1 text-xs font-bold bg-gray-200 rounded"
                 href="tel:+15197311983"
                 target="_blank"
                 rel="noreferrer"
               >
-                (519) 731 1983
+                +1 (519) 731 1983
               </a>
               <a
-                className="inline-block px-2 py-1 mr-1 text-xs bg-gray-200 rounded"
+                className="inline-block px-2 py-1 mr-1 text-xs font-bold bg-gray-200 rounded"
                 href="https://www.google.com/maps/place/7+Foot+Crescent,+Cambridge,+ON+N1R+8M5/@43.3888871,-80.3103819,17z/data=!3m1!4b1!4m5!3m4!1s0x882b882532470b69:0x232f15d014c3571a!8m2!3d43.3888832!4d-80.3081879"
                 target="_blank"
                 rel="noreferrer"
@@ -113,7 +113,7 @@ export function Resume() {
                 7 Foot Crescent, Cambridge, ON N1R 8M5
               </a>
               <a
-                className="inline-block px-2 py-1 mr-1 text-xs bg-gray-200 rounded"
+                className="inline-block px-2 py-1 mr-1 text-xs font-bold bg-gray-200 rounded"
                 href="mailTo:samyadh.jain@gmail.com"
                 target="_blank"
                 rel="noreferrer"
@@ -121,7 +121,7 @@ export function Resume() {
                 samyadh.jain@gmail.com
               </a>
               <a
-                className="inline-block px-2 py-1 mr-1 text-xs bg-gray-200 rounded"
+                className="inline-block px-2 py-1 mr-1 text-xs font-bold bg-gray-200 rounded"
                 href="https://samyadh.github.io"
                 target="_blank"
                 rel="noreferrer"
@@ -219,22 +219,20 @@ export function Resume() {
             <h4 className="pb-1 mt-2 font-bold border-b-2 border-black">
               Education
             </h4>
-            <ul>
+            <ul className="flex">
               {eductation.map((course, index) => {
                 return (
                   <li
                     key={index}
-                    className="relative inline-block w-1/2 pt-2 before:bg-black before:content-center before:absolute before:left-[12px] before:top-[-8px] before:h-[14px] before:w-[2px]"
+                    className="relative inline-block w-3/4 pt-2 before:bg-black before:content-center before:absolute before:left-[12px] before:top-[-8px] before:h-[14px] before:w-[2px]"
                   >
                     <h3 className="text-sm font-bold">
-                      {course.title},{' '}
-                      <span className="text-sm italic font-normal">
-                        Aggregate {course.percentage}
-                      </span>
+                      {course.title}
+                      <p className="text-sm italic font-normal">
+                        {course.university}, {course.period}, Aggregate{' '}
+                        {course.percentage}
+                      </p>
                     </h3>
-                    <h4 className="text-sm">
-                      {course.university}, {course.period}
-                    </h4>
                   </li>
                 );
               })}
@@ -259,23 +257,25 @@ export function Resume() {
               </ul>
             </div>
           )} */}
-          <div>
-            <h4 className="inline-block mt-2 font-bold border-b-2 border-black">
-              Availablity
-            </h4>
-            <ul className="pl-4 ml-2 border-l-2 border-black">
-              {availablity.map((goal, index) => {
-                return (
-                  <li
-                    key={index}
-                    className="relative pt-1 before:border-t-2 before:border-black before:content-center before:absolute before:left-[-28px] before:top-[16px] before:w-[14px]"
-                  >
-                    <h4 className="text-sm">{goal}</h4>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
+          {[999].includes(role.index) && (
+            <div>
+              <h4 className="inline-block mt-2 font-bold border-b-2 border-black">
+                Availablity
+              </h4>
+              <ul className="pl-4 ml-2 border-l-2 border-black">
+                {availablity.map((goal, index) => {
+                  return (
+                    <li
+                      key={index}
+                      className="relative pt-1 before:border-t-2 before:border-black before:content-center before:absolute before:left-[-28px] before:top-[16px] before:w-[14px]"
+                    >
+                      <h4 className="text-sm">{goal}</h4>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          )}
         </div>
       </div>
     </div>

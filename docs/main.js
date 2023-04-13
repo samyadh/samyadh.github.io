@@ -674,17 +674,17 @@ function Resume() {
               lineNumber: 87,
               columnNumber: 15
             }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("a", {
-              className: "inline-block px-2 py-1 mr-1 text-xs bg-gray-200 rounded",
+              className: "inline-block px-2 py-1 mr-1 text-xs font-bold bg-gray-200 rounded",
               href: "tel:+15197311983",
               target: "_blank",
               rel: "noreferrer",
-              children: "(519) 731 1983"
+              children: "+1 (519) 731 1983"
             }, void 0, false, {
               fileName: _jsxFileName,
               lineNumber: 99,
               columnNumber: 15
             }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("a", {
-              className: "inline-block px-2 py-1 mr-1 text-xs bg-gray-200 rounded",
+              className: "inline-block px-2 py-1 mr-1 text-xs font-bold bg-gray-200 rounded",
               href: "https://www.google.com/maps/place/7+Foot+Crescent,+Cambridge,+ON+N1R+8M5/@43.3888871,-80.3103819,17z/data=!3m1!4b1!4m5!3m4!1s0x882b882532470b69:0x232f15d014c3571a!8m2!3d43.3888832!4d-80.3081879",
               target: "_blank",
               rel: "noreferrer",
@@ -694,7 +694,7 @@ function Resume() {
               lineNumber: 107,
               columnNumber: 15
             }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("a", {
-              className: "inline-block px-2 py-1 mr-1 text-xs bg-gray-200 rounded",
+              className: "inline-block px-2 py-1 mr-1 text-xs font-bold bg-gray-200 rounded",
               href: "mailTo:samyadh.jain@gmail.com",
               target: "_blank",
               rel: "noreferrer",
@@ -704,7 +704,7 @@ function Resume() {
               lineNumber: 115,
               columnNumber: 15
             }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("a", {
-              className: "inline-block px-2 py-1 mr-1 text-xs bg-gray-200 rounded",
+              className: "inline-block px-2 py-1 mr-1 text-xs font-bold bg-gray-200 rounded",
               href: "https://samyadh.github.io",
               target: "_blank",
               rel: "noreferrer",
@@ -882,14 +882,15 @@ function Resume() {
             lineNumber: 219,
             columnNumber: 13
           }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("ul", {
+            className: "flex",
             children: _models_role_details__WEBPACK_IMPORTED_MODULE_1__["eductation"].map((course, index) => {
               return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("li", {
-                className: "relative inline-block w-1/2 pt-2 before:bg-black before:content-center before:absolute before:left-[12px] before:top-[-8px] before:h-[14px] before:w-[2px]",
-                children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("h3", {
+                className: "relative inline-block w-3/4 pt-2 before:bg-black before:content-center before:absolute before:left-[12px] before:top-[-8px] before:h-[14px] before:w-[2px]",
+                children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("h3", {
                   className: "text-sm font-bold",
-                  children: [course.title, ",", ' ', /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("span", {
+                  children: [course.title, /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("p", {
                     className: "text-sm italic font-normal",
-                    children: ["Aggregate ", course.percentage]
+                    children: [course.university, ", ", course.period, ", Aggregate", ' ', course.percentage]
                   }, void 0, true, {
                     fileName: _jsxFileName,
                     lineNumber: 231,
@@ -899,15 +900,8 @@ function Resume() {
                   fileName: _jsxFileName,
                   lineNumber: 229,
                   columnNumber: 21
-                }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("h4", {
-                  className: "text-sm",
-                  children: [course.university, ", ", course.period]
-                }, void 0, true, {
-                  fileName: _jsxFileName,
-                  lineNumber: 235,
-                  columnNumber: 21
-                }, this)]
-              }, index, true, {
+                }, this)
+              }, index, false, {
                 fileName: _jsxFileName,
                 lineNumber: 225,
                 columnNumber: 19
@@ -922,14 +916,14 @@ function Resume() {
           fileName: _jsxFileName,
           lineNumber: 218,
           columnNumber: 11
-        }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("div", {
+        }, this), [999].includes(role.index) && /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("div", {
           children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("h4", {
             className: "inline-block mt-2 font-bold border-b-2 border-black",
             children: "Availablity"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 263,
-            columnNumber: 13
+            lineNumber: 262,
+            columnNumber: 15
           }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("ul", {
             className: "pl-4 ml-2 border-l-2 border-black",
             children: _models_role_details__WEBPACK_IMPORTED_MODULE_1__["availablity"].map((goal, index) => {
@@ -940,24 +934,24 @@ function Resume() {
                   children: goal
                 }, void 0, false, {
                   fileName: _jsxFileName,
-                  lineNumber: 273,
-                  columnNumber: 21
+                  lineNumber: 272,
+                  columnNumber: 23
                 }, this)
               }, index, false, {
                 fileName: _jsxFileName,
-                lineNumber: 269,
-                columnNumber: 19
+                lineNumber: 268,
+                columnNumber: 21
               }, this);
             })
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 266,
-            columnNumber: 13
+            lineNumber: 265,
+            columnNumber: 15
           }, this)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 262,
-          columnNumber: 11
+          lineNumber: 261,
+          columnNumber: 13
         }, this)]
       }, void 0, true, {
         fileName: _jsxFileName,
@@ -1036,12 +1030,12 @@ const roleDetails = [{
   index: 0,
   title: 'Lead Software Engineer',
   tagLine: 'Lead Software Engineer with ' + getExperience() + ' years experience',
-  skills: ['JavaScript', 'Angular', 'React', 'NodeJS', 'SCSS', 'HTML', 'PHP', 'Python'],
-  intro: 'Lead Software Engineer with experience in building the pixel-perfect, beautiful, and robust user interface for products which is used by millions of people around the world every day.'
+  skills: ['JavaScript', 'Angular', 'React', 'NodeJS', 'SCSS', 'HTML', 'PHP', 'Python', 'Agile', 'Scrum', 'CI/CD', 'UI/UX Design'],
+  intro: 'Stitching world-class functionalities together and create world-class products is my passion. I love the logic and structure of coding, always look to write elegant and efficient code no matter which programming language it is.'
 }, {
   index: 1,
-  title: 'Team Lead',
-  tagLine: 'Team Lead with ' + getExperience() + ' years experience',
+  title: 'Tech Lead',
+  tagLine: 'Lead Software Engineer with ' + getExperience() + ' years experience',
   skills: ['Agile', 'Scrum', 'NodeJS', 'JavaScript', 'Angular', 'React', 'PHP', 'Python', 'CI/CD', 'UI/UX Design'],
   intro: 'Vast experience in managing a team with up to 15 team members. By believing in “Be the change you wish to see in the world.” – MKG, I always strive to lead as an example, this approach has helped me to build and nurture teams to perform with great efficiency'
 }, {
@@ -1049,7 +1043,7 @@ const roleDetails = [{
   title: 'Full-Stack Developer',
   tagLine: 'Full-Stack Developer with ' + getExperience() + ' years experience',
   skills: ['NodeJS', 'JavaScript', 'Angular', 'React', 'Python', 'PHP', 'CI/CD', 'REST/GRAPHQL', 'SQL/No SQL', 'UI/UX Design'],
-  intro: 'Stitching kickass functionalities together and create world-class products is my passion. I love the logic and structure of coding, always look to write elegant and efficient code no matter which programming language it is.'
+  intro: 'Stitching world-class functionalities together and create world-class products is my passion. I love the logic and structure of coding, always look to write elegant and efficient code no matter which programming language it is.'
 }, {
   index: 3,
   title: 'Technical Project Manager',
@@ -1071,6 +1065,46 @@ const roleDetails = [{
   intro: 'People who know me say I am "Jack of all trades". However, I feel I know only enough to find, analyze and comprehend things that I do not know. I enjoy taking complex problems and find simple but beautiful solutions for them. Proven experience in guiding tech products to perform to their best.'
 }];
 const workExperience = [{
+  title: 'Technical Project Manager',
+  company: 'Reckonsys Tech Labs Private Limited',
+  period: ' Nov 2022 - Present',
+  roles: [{
+    title: 'Technical Project Manager',
+    company: 'Reckonsys Tech Labs Private Limited',
+    period: ' Nov 2022 - Present'
+  }, {
+    title: 'Lead UI Developer',
+    company: 'Reckonsys Tech Labs Private Limited',
+    period: ' Mar 2017 - Mar 2022'
+  }],
+  contributions: ['Oversee team responsible for design, development & deployment of SaaS platforms.', 'Design UI architecture to develop optimized frontend code.', 'Collaborate with client to design UX and develop intriguing  UI interfaces.', 'Motivate, encourage the team to deliver lean and robust applications on time.', 'Deliver applications to clients under a given time frame and help them to gain more familiarity with the system.'],
+  projects: 'Trust Your Supplier, Lenovo LanSchool, Lenovo Vantage, TransportSimple, Vndly, Kredily, IT People',
+  projectDetails: [// {
+  //   title: 'Trust Your Supplier',
+  //   company: 'Chainyard',
+  //   role: 'Team Lead',
+  //   techUsed: 'React, TypeScript, MongoDb, Node',
+  //   description:
+  //     'Trust Your Supplier is the window to the information you need for centralized planning & supplier oversight',
+  //   contributions:
+  //     'i am helping the team in creating some of the beautiful and snappy user interfaces, also build the Services, librarys used across multiple platforms offered. Create / Integrate services that interacted with various service providers. Suggest and create POCs, also manage a team of 5 developers.',
+  // },
+  {
+    title: 'CNote',
+    company: 'CNote',
+    role: 'Team Lead',
+    techUsed: 'React, TypeScript, MySql, Node',
+    description: 'CNote created technology to streamline community-centered impact investing at scale. Further Racial Equity and Social Justice by investing with CNote.',
+    contributions: 'i am helping the team in creating some of the beautiful and snappy user interfaces, also build the Services, librarys used across multiple platforms offered. Create / Integrate services that interacted with various service providers. Suggest and create POCs, also manage a team of 2 developers.'
+  }, {
+    title: 'Lenovo LanSchool',
+    company: 'Lenovo Software',
+    role: 'Individual Contributor',
+    techUsed: 'Angular 12, Nx, Nightwatch, NodeJS, Jenkins',
+    description: 'LanSchool is a Classroom Management & Guidance Web Platform. Some of the features are Communication and Screen Sharing, Limit web, Blank screen, Thumbnail monitoring, Messaging, Etc',
+    contributions: 'I was involved in building microservices and reusable components, libraries for the platform using TDD. Also, work with UX designers to optimize user interactions. In addition to them, I work on various POCs for the platform and constantly mentoring juniors.'
+  }]
+}, {
   title: 'Lead Software Engineer',
   company: 'Practo Technologies Private Limited',
   period: ' Jun 2022 - Aug 2022',
@@ -1081,51 +1115,17 @@ const workExperience = [{
   }],
   contributions: ['Contributions to overall product roadmap, increase engagement with by optimizing User Experience.', 'Design process for various development activites and educate it to team.', 'Produce high quality code and mentor team members to achive better coding standards.', 'Help team members in personal goals and Managers to meet their targets.'],
   projects: 'Practo Care Surgeries, Ray',
-  projectDetails: [{
-    title: 'Practo.com',
-    company: 'Practo',
-    role: 'Lead Software Engineer',
-    techUsed: 'React, TypeScript, Node, GraphQL',
-    description: 'Practo is an aggregator to connect with India’s top doctors via video consultation, get digital prescriptions, order medicines, book doctor appointments & lab tests. It serves 300 Million users every year and help 100k Doctors around 20+ Countries to offer services directly from phone',
-    contributions: 'I lead a bunch of UI experts to manage, mentor, motivate them.'
-  }]
-}, {
-  title: 'Technical Project Manager',
-  company: 'Reckonsys Tech Labs Private Limited',
-  period: ' Mar 2022 - Present',
-  roles: [{
-    title: 'Technical Project Manager',
-    company: 'Reckonsys Tech Labs Private Limited',
-    period: ' Mar 2022 - Jun 2022'
-  }, {
-    title: 'Lead UI Developer',
-    company: 'Reckonsys Tech Labs Private Limited',
-    period: ' Mar 2017 - Mar 2022'
-  }],
-  contributions: ['Oversee team responsible for design, development & deployment of SaaS platforms.', 'Design UI architecture to develop optimized frontend code.', 'Collaborate with client to design UX and develop intriguing  UI interfaces.', 'Motivate, encourage the team to deliver lean and robust applications on time.', 'Deliver applications to clients under a given time frame and help them to gain more familiarity with the system.'],
-  projects: 'Trust Your Supplier, Lenovo LanSchool, Lenovo Vantage, TransportSimple, Vndly, Kredily, IT People' // projectDetails: [
-  //   {
-  //     title: 'Trust Your Supplier',
-  //     company: 'Chainyard',
-  //     role: 'Team Lead',
-  //     techUsed: 'React, TypeScript, MongoDb, Node',
-  //     description:
-  //       'Trust Your Supplier is the window to the information you need for centralized planning & supplier oversight',
-  //     contributions:
-  //       'i am helping the team in creating some of the beautiful and snappy user interfaces, also build the Services, librarys used across multiple platforms offered. Create / Integrate services that interacted with various service providers. Suggest and create POCs, also manage a team of 5 developers.',
-  //   },
-  //   {
-  //     title: 'Lenovo LanSchool',
-  //     company: 'Lenovo Software',
-  //     role: 'Individual Contributor',
-  //     techUsed: 'Angular 12, Nx, Nightwatch, NodeJS, Jenkins',
-  //     description:
-  //       'LanSchool is a Classroom Management & Guidance Web Platform. Some of the features are Communication and Screen Sharing, Limit web, Blank screen, Thumbnail monitoring, Messaging, Etc',
-  //     contributions:
-  //       'I was involved in building microservices and reusable components, libraries for the platform using TDD. Also, work with UX designers to optimize user interactions. In addition to them, I work on various POCs for the platform and constantly mentoring juniors.',
-  //   },
-  // ],
-
+  projectDetails: [// {
+    //   title: 'Practo.com',
+    //   company: 'Practo',
+    //   role: 'Lead Software Engineer',
+    //   techUsed: 'React, TypeScript, Node, GraphQL',
+    //   description:
+    //     'Practo is an aggregator to connect with India’s top doctors via video consultation, get digital prescriptions, order medicines, book doctor appointments & lab tests. It serves 300 Million users every year and help 100k Doctors around 20+ Countries to offer services directly from phone',
+    //   contributions:
+    //     'I lead a bunch of UI experts to manage, mentor, motivate them.',
+    // },
+  ]
 }, {
   title: 'Senior Software Engineer',
   company: 'HyHop Mobility Technologies Private Limited',
@@ -1145,7 +1145,7 @@ const workExperience = [{
   contributions: ['Interact with clients across the world to understand requirements and develop web and app systems.', 'Create responsive websites for various clients.', 'Discuss and develop REST APIs for Android, IOS apps to consume.'],
   projects: 'FDSee, Sivance, Soon Seng Huat, Ficep Approved, APESB, Book Kingdom, Mavego'
 }, {
-  hidden: [0, 1, 2],
+  hidden: [0, 1, 2, 3],
   title: 'Tech Consultant',
   company: 'Freelance',
   period: 'Oct 2012 - Aug 2015',
@@ -1153,6 +1153,12 @@ const workExperience = [{
   projects: 'Fantasy Us, Yepshow, Being in christ, MK Fairmont'
 }];
 const eductation = [{
+  title: 'Project Management',
+  university: 'Ontario Graduation Certificate',
+  college: 'Conestoga College, Doon, Kitchner, ON',
+  period: 'Sep 2022 – Apr 2023',
+  percentage: '78%'
+}, {
   title: "Master's in Computer Application",
   university: 'Visvesvaraya Technological University',
   college: 'Malnad College of Engineering, Hassan',
