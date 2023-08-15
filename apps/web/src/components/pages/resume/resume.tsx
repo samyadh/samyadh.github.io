@@ -66,7 +66,7 @@ export function Resume() {
         </div>
       </div>
       <div className="w-[1180px] h-[1668px] m-auto box-border border-2 p-12 flex flex-col relative overflow-hidden">
-        <div className="absolute z-10 -rotate-3 top-0 left-1/2 w-[1800px]">
+        {/* <div className="absolute z-10 -rotate-3 top-0 left-1/2 w-[1800px]">
           <ul>
             {skills.map((skill, key) => {
               return (
@@ -76,7 +76,7 @@ export function Resume() {
               );
             })}
           </ul>
-        </div>
+        </div> */}
         <div className="z-10">
           <div className="flex items-end justify-between">
             <div>
@@ -146,7 +146,7 @@ export function Resume() {
                     key={index}
                     className="relative pt-2 before:border-t-2 before:border-black before:content-center before:absolute before:left-[-28px] before:top-[22px] before:w-[14px]"
                   >
-                    {work.roles ? (
+                    {/* {work.roles ? (
                       work.roles.map((mrole, mIndex) => (
                         <h3 className="text-sm font-bold">
                           {mrole.title + ' '}
@@ -159,16 +159,16 @@ export function Resume() {
                           )}
                         </h3>
                       ))
-                    ) : (
-                      <h3 className="text-sm font-bold">
-                        {work.title + ' '}
-                        {!roleDetails[role.index].freelance && (
-                          <span className="text-sm italic font-normal">
-                            at {work.company}, {work.period}
-                          </span>
-                        )}
-                      </h3>
-                    )}
+                    ) : ( */}
+                    <h3 className="text-sm font-bold">
+                      {work.title + ' '}
+                      {!roleDetails[role.index].freelance && (
+                        <span className="text-sm italic font-normal">
+                          at {work.company}, {work.period}
+                        </span>
+                      )}
+                    </h3>
+                    {/* )} */}
                     <div>
                       {work.projectDetails && (
                         <ul className="mb-1">
