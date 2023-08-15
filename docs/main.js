@@ -616,29 +616,7 @@ function Resume() {
       columnNumber: 7
     }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("div", {
       className: "w-[1180px] h-[1668px] m-auto box-border border-2 p-12 flex flex-col relative overflow-hidden",
-      children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("div", {
-        className: "absolute z-10 -rotate-3 top-0 left-1/2 w-[1800px]",
-        children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("ul", {
-          children: skills.map((skill, key) => {
-            return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("li", {
-              className: "font-black text-gray-100 text-9xl",
-              children: skill
-            }, key, false, {
-              fileName: _jsxFileName,
-              lineNumber: 73,
-              columnNumber: 17
-            }, this);
-          })
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 70,
-          columnNumber: 11
-        }, this)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 69,
-        columnNumber: 9
-      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("div", {
+      children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("div", {
         className: "z-10",
         children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("div", {
           className: "flex items-end justify-between",
@@ -757,21 +735,7 @@ function Resume() {
 
               return work.hidden === undefined || !((_work$hidden = work.hidden) !== null && _work$hidden !== void 0 && _work$hidden.includes(role.index)) ? /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("li", {
                 className: "relative pt-2 before:border-t-2 before:border-black before:content-center before:absolute before:left-[-28px] before:top-[22px] before:w-[14px]",
-                children: [work.roles ? work.roles.map((mrole, mIndex) => /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("h3", {
-                  className: "text-sm font-bold",
-                  children: [mrole.title + ' ', !_models_role_details__WEBPACK_IMPORTED_MODULE_1__["roleDetails"][role.index].freelance && /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("span", {
-                    className: "text-sm italic font-normal",
-                    children: mIndex === 0 ? `at ${mrole.company}, ${mrole.period}` : `from ${mrole.period}`
-                  }, void 0, false, {
-                    fileName: _jsxFileName,
-                    lineNumber: 154,
-                    columnNumber: 29
-                  }, this)]
-                }, void 0, true, {
-                  fileName: _jsxFileName,
-                  lineNumber: 151,
-                  columnNumber: 25
-                }, this)) : /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("h3", {
+                children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("h3", {
                   className: "text-sm font-bold",
                   children: [work.title + ' ', !_models_role_details__WEBPACK_IMPORTED_MODULE_1__["roleDetails"][role.index].freelance && /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("span", {
                     className: "text-sm italic font-normal",
@@ -779,12 +743,12 @@ function Resume() {
                   }, void 0, true, {
                     fileName: _jsxFileName,
                     lineNumber: 166,
-                    columnNumber: 27
+                    columnNumber: 25
                   }, this)]
                 }, void 0, true, {
                   fileName: _jsxFileName,
                   lineNumber: 163,
-                  columnNumber: 23
+                  columnNumber: 21
                 }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("div", {
                   children: [work.projectDetails && /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__["jsxDEV"])("ul", {
                     className: "mb-1",
@@ -957,8 +921,8 @@ function Resume() {
         fileName: _jsxFileName,
         lineNumber: 80,
         columnNumber: 9
-      }, this)]
-    }, void 0, true, {
+      }, this)
+    }, void 0, false, {
       fileName: _jsxFileName,
       lineNumber: 68,
       columnNumber: 7
@@ -1030,8 +994,8 @@ const roleDetails = [{
   index: 0,
   title: 'Lead Software Engineer',
   tagLine: 'Lead Software Engineer with ' + getExperience() + ' years experience',
-  skills: ['JavaScript', 'Angular', 'React', 'NodeJS', 'SCSS', 'HTML', 'PHP', 'Python', 'Agile', 'Scrum', 'CI/CD', 'UI/UX Design'],
-  intro: 'Stitching world-class functionalities together and create world-class products is my passion. I love the logic and structure of coding, always look to write elegant and efficient code no matter which programming language it is.'
+  skills: ['React', 'JavaScript', 'Angular', 'NodeJS', 'SCSS', 'HTML', 'PHP', 'Python', 'Agile', 'Scrum', 'CI/CD', 'UI/UX Design'],
+  intro: 'People who know me say I am "Jack of all trades". However, I feel I know only enough to find, analyze and comprehend things that I do not know. I enjoy taking complex problems and find simple but beautiful solutions for them. Proven experience in guiding tech products to perform to their best.'
 }, {
   index: 1,
   title: 'Tech Lead',
@@ -1042,13 +1006,13 @@ const roleDetails = [{
   index: 2,
   title: 'Full-Stack Developer',
   tagLine: 'Full-Stack Developer with ' + getExperience() + ' years experience',
-  skills: ['NodeJS', 'JavaScript', 'Angular', 'React', 'Python', 'PHP', 'CI/CD', 'REST/GRAPHQL', 'SQL/No SQL', 'UI/UX Design'],
+  skills: ['React', 'NodeJS', 'JavaScript', 'Angular', 'Python', 'PHP', 'CI/CD', 'REST/GRAPHQL', 'SQL/No SQL', 'UI/UX Design'],
   intro: 'Stitching world-class functionalities together and create world-class products is my passion. I love the logic and structure of coding, always look to write elegant and efficient code no matter which programming language it is.'
 }, {
   index: 3,
   title: 'Technical Project Manager',
   tagLine: 'Technical Project Manager with ' + getExperience() + ' years experience',
-  skills: ['Agile', 'Scrum', 'NodeJS', 'JavaScript', 'Angular', 'React', 'Python', 'UI/UX Design', 'Resource Management', 'Release Management'],
+  skills: ['React', 'NodeJS', 'JavaScript', 'Angular', 'Agile', 'Scrum', 'Python', 'UI/UX Design', 'Resource Management', 'Release Management'],
   intro: 'As a manager I am focus on building multi-functional efficient teams and increase customer satisfaction through the process. People who know me say I am "Jack of all trades". However, I feel I know only enough to find, analyze and comprehend things that I do not know.'
 }, {
   index: 4,
@@ -1065,68 +1029,65 @@ const roleDetails = [{
   intro: 'People who know me say I am "Jack of all trades". However, I feel I know only enough to find, analyze and comprehend things that I do not know. I enjoy taking complex problems and find simple but beautiful solutions for them. Proven experience in guiding tech products to perform to their best.'
 }];
 const workExperience = [{
-  title: 'Technical Project Manager',
-  company: 'Reckonsys Tech Labs Private Limited',
-  period: ' Nov 2022 - Present',
-  roles: [{
-    title: 'Technical Project Manager',
-    company: 'Reckonsys Tech Labs Private Limited',
-    period: ' Nov 2022 - Present'
-  }, {
-    title: 'Lead UI Developer',
-    company: 'Reckonsys Tech Labs Private Limited',
-    period: ' Mar 2017 - Mar 2022'
-  }],
+  title: 'Lead UI Developer / Technical Project Manager',
+  company: 'Reckonsys Inc',
+  period: ' Mar 2017 - Present',
   contributions: ['Oversee team responsible for design, development & deployment of SaaS platforms.', 'Design UI architecture to develop optimized frontend code.', 'Collaborate with client to design UX and develop intriguing  UI interfaces.', 'Motivate, encourage the team to deliver lean and robust applications on time.', 'Deliver applications to clients under a given time frame and help them to gain more familiarity with the system.'],
-  projects: 'Trust Your Supplier, Lenovo LanSchool, Lenovo Vantage, TransportSimple, Vndly, Kredily, IT People',
-  projectDetails: [// {
-  //   title: 'Trust Your Supplier',
-  //   company: 'Chainyard',
-  //   role: 'Team Lead',
-  //   techUsed: 'React, TypeScript, MongoDb, Node',
-  //   description:
-  //     'Trust Your Supplier is the window to the information you need for centralized planning & supplier oversight',
-  //   contributions:
-  //     'i am helping the team in creating some of the beautiful and snappy user interfaces, also build the Services, librarys used across multiple platforms offered. Create / Integrate services that interacted with various service providers. Suggest and create POCs, also manage a team of 5 developers.',
-  // },
-  {
+  projects: 'IBM, Vndly (Workday), Trust Your Supplier, Lenovo Vantage, TransportSimple, Kredily, IT People',
+  projectDetails: [{
     title: 'CNote',
     company: 'CNote',
     role: 'Team Lead',
     techUsed: 'React, TypeScript, MySql, Node',
-    description: 'CNote created technology to streamline community-centered impact investing at scale. Further Racial Equity and Social Justice by investing with CNote.',
-    contributions: 'i am helping the team in creating some of the beautiful and snappy user interfaces, also build the Services, librarys used across multiple platforms offered. Create / Integrate services that interacted with various service providers. Suggest and create POCs, also manage a team of 2 developers.'
+    description: 'CNote created technology to streamline community-centered impact investing at scale. Further Racial Equity and Social Justice by investing with CNote',
+    contributions: 'I am helping the team in creating some of the beautiful and snappy user interfaces, also build the Services, librarys used across multiple platforms offered. Create / Integrate services that interacted with various service providers. Suggest and create POCs, also manage a team of 4 developers.'
   }, {
     title: 'Lenovo LanSchool',
     company: 'Lenovo Software',
     role: 'Individual Contributor',
-    techUsed: 'Angular 12, Nx, Nightwatch, NodeJS, Jenkins',
+    techUsed: 'React, Typescript, Nx, Nightwatch, NodeJS, Jenkins',
     description: 'LanSchool is a Classroom Management & Guidance Web Platform. Some of the features are Communication and Screen Sharing, Limit web, Blank screen, Thumbnail monitoring, Messaging, Etc',
     contributions: 'I was involved in building microservices and reusable components, libraries for the platform using TDD. Also, work with UX designers to optimize user interactions. In addition to them, I work on various POCs for the platform and constantly mentoring juniors.'
+  }, {
+    title: 'Trust Your Supplier (IBM)',
+    company: 'Chainyard (IBM)',
+    role: 'Team Lead',
+    techUsed: 'React, TypeScript, MongoDb, Node',
+    description: 'Trust Your Supplier is the window to the information you need for centralized planning & supplier oversight',
+    contributions: ' I leverage cutting-edge technologies to create user-centric interfaces, seamlessly integrating blockchain solutions to revolutionize supply chain transparency. My role involves collaborating with cross-functional teams to deliver intuitive UI/UX experiences that redefine industry standards.'
   }]
-}, {
-  title: 'Lead Software Engineer',
-  company: 'Practo Technologies Private Limited',
-  period: ' Jun 2022 - Aug 2022',
-  roles: [{
-    title: 'Lead Software Engineer',
-    company: 'Practo Technologies Private Limited',
-    period: ' Jun 2022 - Aug 2022'
-  }],
-  contributions: ['Contributions to overall product roadmap, increase engagement with by optimizing User Experience.', 'Design process for various development activites and educate it to team.', 'Produce high quality code and mentor team members to achive better coding standards.', 'Help team members in personal goals and Managers to meet their targets.'],
-  projects: 'Practo Care Surgeries, Ray',
-  projectDetails: [// {
-    //   title: 'Practo.com',
-    //   company: 'Practo',
-    //   role: 'Lead Software Engineer',
-    //   techUsed: 'React, TypeScript, Node, GraphQL',
-    //   description:
-    //     'Practo is an aggregator to connect with India’s top doctors via video consultation, get digital prescriptions, order medicines, book doctor appointments & lab tests. It serves 300 Million users every year and help 100k Doctors around 20+ Countries to offer services directly from phone',
-    //   contributions:
-    //     'I lead a bunch of UI experts to manage, mentor, motivate them.',
-    // },
-  ]
-}, {
+}, // {
+//   title: 'Lead Software Engineer',
+//   company: 'Practo Technologies Private Limited',
+//   period: ' Jun 2022 - Aug 2022',
+//   roles: [
+//     {
+//       title: 'Lead Software Engineer',
+//       company: 'Practo Technologies Private Limited',
+//       period: ' Jun 2022 - Aug 2022',
+//     },
+//   ],
+//   contributions: [
+//     'Contributions to overall product roadmap, increase engagement with by optimizing User Experience.',
+//     'Design process for various development activites and educate it to team.',
+//     'Produce high quality code and mentor team members to achive better coding standards.',
+//     'Help team members in personal goals and Managers to meet their targets.',
+//   ],
+//   projects: 'Practo Care Surgeries, Ray',
+//   projectDetails: [
+//     // {
+//     //   title: 'Practo.com',
+//     //   company: 'Practo',
+//     //   role: 'Lead Software Engineer',
+//     //   techUsed: 'React, TypeScript, Node, GraphQL',
+//     //   description:
+//     //     'Practo is an aggregator to connect with India’s top doctors via video consultation, get digital prescriptions, order medicines, book doctor appointments & lab tests. It serves 300 Million users every year and help 100k Doctors around 20+ Countries to offer services directly from phone',
+//     //   contributions:
+//     //     'I lead a bunch of UI experts to manage, mentor, motivate them.',
+//     // },
+//   ],
+// },
+{
   title: 'Senior Software Engineer',
   company: 'HyHop Mobility Technologies Private Limited',
   period: 'Aug 2016 - Feb 2017',
